@@ -1,0 +1,9 @@
+{
+  "name": "MRMR_FALLBACK",
+  "formula_dsl": "mi(X, Y) - redundancy(X, S)",
+  "formula_math": "$J = I(X;Y) - \frac{1}{|S|}\\sum_{s \\in S} I(X;s)$",
+  "intuition": "解析失败，系统自动回退至经典 mRMR 算子。",
+  "theoretical_advantage": "作为系统容错的兜底基线。",
+  "avg_accuracy": 0,
+  "creation_time": "2026-04-21T14:38:09.219479"
+}

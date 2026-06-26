@@ -1,0 +1,9 @@
+{
+  "name": "NewMethod_v2",
+  "formula_dsl": "mi(X, Y) - redundancy(X, S)",
+  "formula_math": "$I(X;Y) - \\\\frac{1}{|S|}\\\\sum_{s \\\\in S} I(X;s)$",
+  "intuition": "新的特征选择准则函数，旨在同时考虑特征与目标的相关性（$I(X;Y)$）和与已选特征的冗余度（$\\\\frac{1}{|S|}\\\\sum_{s \\\\in S} I(X;s)$）。",
+  "theoretical_advantage": "相比于 JMI 等当前最先进方法，我们的新方法在信息论机制上更为先进，能够更好地平衡相关性、冗余性和互补性。",
+  "avg_accuracy": 0,
+  "creation_time": "2026-05-29T15:44:27.364056"
+}

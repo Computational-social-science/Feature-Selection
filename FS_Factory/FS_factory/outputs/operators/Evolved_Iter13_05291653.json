@@ -1,0 +1,9 @@
+{
+  "name": "Evolved_Iter13_05291653",
+  "formula_dsl": "mi(X, Y) - max_redundancy(X, S)",
+  "formula_math": "J(X, Y, S) = I(X;Y) - \\max_{s \\in S} I(X;s)",
+  "intuition": "这个公式是根据信息论中的互信息和最大冗余度来设计的。它希望选择的特征与目标的相关性高，且与已选特征的冗余度低。这样的准则可以使得选择的特征既能提升预测效果，又避免冗余。",
+  "theoretical_advantage": "在信息论中，互信息 I(X;Y) 度量了 X 与 Y 的相关性，而冗余度 max_redundancy(X, S) 度量了 X 与已选特征 S 的冗余。这个公式通过相减来平衡两者，使得选择的特征既能提升预测效果，又避免冗余。这样的设计在理论上应该能获得更好的预测效果。",
+  "avg_accuracy": 0,
+  "creation_time": "2026-05-29T16:53:11.177428"
+}

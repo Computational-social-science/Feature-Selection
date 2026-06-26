@@ -1,0 +1,13 @@
+{
+  "name": "新算法_v1",
+  "formula_dsl": "mi(X, Y) - mean([cmi(X, Y, s) for s in S])",
+  "formula_math": "$J(X, Y, S) = I(X;Y) - \\\\frac{1}{|S|}\\sum_{s \\in S} I(X;s)$",
+  "intuition": "新算法的核心思想是在考虑特征与目标的相关性（$I(X;Y)$）的同时，减去已选特征与特征之间的平均冗余（$\\\\frac{1}{|S|}\\sum_{s \\in S} I(X;s)$）。这样的设计旨在选择那些与目标相关性高且与其他已选特征相关性低的特征，从而提高模型的泛化能力。",
+  "theoretical_advantage": "新算法在理论机制上超越了 JMI 方法，因为在计算互信息时考虑了已选特征的影响，使得选出的特征更能体现特征之间的互补性，从而可能带来更高的分类准确率。",
+  "avg_accuracy": 0.5989393939393939,
+  "creation_time": "2026-05-09T10:28:41.957702",
+  "bayes_avg_accuracy": 0.5886363636363636,
+  "rf_avg_accuracy": 0.6645454545454546,
+  "svm_avg_accuracy": 0.6163636363636363,
+  "knn_avg_accuracy": 0.5262121212121214
+}

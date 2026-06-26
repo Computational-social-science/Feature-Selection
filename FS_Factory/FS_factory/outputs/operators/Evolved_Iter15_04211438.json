@@ -1,0 +1,9 @@
+{
+  "name": "Evolved_Iter15_04211438",
+  "formula_dsl": "mi(X, Y) - redundancy(X, S)",
+  "formula_math": "$I(X;Y) - \\\\frac{1}{|S|}\\sum_{s \\\\in S} I(X;s)$",
+  "intuition": "新特征选择准则函数的公式是 $I(X;Y) - \\\\frac{1}{|S|}\\sum_{s \\\\in S} I(X;s)$，其中 $I(X;Y)$ 是特征 $X$ 与目标 $Y$ 的互信息，$\\frac{1}{|S|}\\sum_{s \\\\in S} I(X;s)$ 是特征 $X$ 与已选特征 $S$ 的平均互信息。这种准则旨在选择相关性高且不冗余的特征。",
+  "theoretical_advantage": "这种新的特征选择准则结合了互信息和平均冗余的概念，使得选择的特征既与目标变量高度相关，又与已选特征不相关，从而能够更有效地减少冗余信息，提高模型的泛化性能。",
+  "avg_accuracy": 0,
+  "creation_time": "2026-04-21T14:38:17.023133"
+}

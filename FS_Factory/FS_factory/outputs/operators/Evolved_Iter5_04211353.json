@@ -1,0 +1,9 @@
+{
+  "name": "Evolved_Iter5_04211353",
+  "formula_dsl": "mi(X, Y) - redundancy(X, S)",
+  "formula_math": "$I(X;Y) - \\\\frac{1}{|S|}\\\\sum_{s \\\\in S} I(X;s)$",
+  "intuition": "这个公式是基于互信息和冗余度的计算。首先，互信息 I(X;Y) 度量 X 与 Y 的相关性，冗余度 redundancy(X, S) 度量 X 与已选特征 S 的冗余。这个公式减去冗余度，使得选出的特征尽可能与目标 Y 相关，又与已选特征 S 冗余度低。",
+  "theoretical_advantage": "这个新方法在信息论上优于 JMI 等现有方法，因为它通过减去冗余度，使得选出的特征尽可能与目标 Y 相关，又与已选特征 S 冗余度低。这样既可以提高特征与目标的关联性，又降低了特征之间的冗余性，从而可能提高模型的预测准确率。",
+  "avg_accuracy": 0,
+  "creation_time": "2026-04-21T13:53:55.773701"
+}

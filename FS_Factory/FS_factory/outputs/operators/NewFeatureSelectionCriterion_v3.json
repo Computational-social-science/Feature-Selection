@@ -1,0 +1,9 @@
+{
+  "name": "NewFeatureSelectionCriterion_v3",
+  "formula_dsl": "mi(X, Y) - redundancy(X, S)",
+  "formula_math": "$I(X;Y) - \\\\frac{1}{|S|}\\\\sum_{s \\\\in S} I(X;s)$",
+  "intuition": "新方法的直观解释是，它通过计算互信息 I(X;Y) 减去平均冗余来衡量特征 X 与目标 Y 的相关性，同时考虑已选特征 S 的影响。这种方法在一定程度上解决了冗余性的问题，使得选出的特征更能代表目标 Y。",
+  "theoretical_advantage": "新方法在理论机制上优于 JMI。首先，新方法考虑了已选特征 S 对相关性的影响，使得选出的特征更能代表目标 Y。其次，新方法在避免冗余方面表现更好。",
+  "avg_accuracy": 0,
+  "creation_time": "2026-05-29T15:44:20.104115"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Evolved_Iter16_05291653",
+  "formula_dsl": "mi(X, Y) - max_redundancy(X, S)",
+  "formula_math": "$J(X, Y, S) = I(X;Y) - \\\\max_{s \\\\in S} I(X;s)$",
+  "intuition": "新方法的直觉是，我们希望选择的特征与目标的相关性最大，且与其他已选特征的冗余最小。所以我们选择互信息 $I(X;Y)$ 减去最大冗余 $\\\\max_{s \\\\in S} I(X;s)$。",
+  "theoretical_advantage": "新方法的理论优势是，相比之前的 SOTA 方法 Evolved_Iter7_05291544，它在多个数据集和分类器上的平均准确率更高。通过理论机制的分析，我们发现这种方法在相关性、冗余性和互补性方面都有显著的提升，从而在预测效果上取得更好的结果。",
+  "avg_accuracy": 0,
+  "creation_time": "2026-05-29T16:53:22.525269"
+}

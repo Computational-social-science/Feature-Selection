@@ -1,0 +1,9 @@
+{
+  "name": "Evolved_Iter9_05092204",
+  "formula_dsl": "mi(X, Y) - sum([cmi(X, Y, s) for s in S]) / max(len(S), 1)",
+  "formula_math": "$J(X, Y, S) = I(X;Y) - \\\\frac{1}{|S|}\\\\sum_{s \\\\in S} I(X;s)$",
+  "intuition": "该方法通过计算互信息 I(X;Y)，然后减去平均冗余度，以衡量特征 X 对目标 Y 的相对重要性。这种方法试图在相关性和冗余性之间取得平衡，既考虑到特征与目标的关联性，又考虑到特征之间可能存在的冗余。",
+  "theoretical_advantage": "相较于当前最先进方法 JMI，新方法的理论机制更加直观且易于理解。它不仅考虑了特征与目标的关联性，还考虑了特征之间的冗余性，使得选出的特征更全面且冗余度更低。",
+  "avg_accuracy": 0,
+  "creation_time": "2026-05-09T22:04:40.942589"
+}

@@ -1,0 +1,104 @@
+# # config/settings.yaml
+
+# # 项目配置
+# project:
+#   name: "Feature Selection Factory"
+#   version: "1.0.0"
+#   description: "LLM-driven Feature Selection Operator Evolution System"
+
+# # DSL 配置
+# dsl:
+#   # 数值稳定性
+#   eps: 1.0e-10
+#   log_base: 2  # 对数底数: 2 (bits) 或 e (nats)
+  
+#   # kNN 熵估计
+#   knn:
+#     k: 5
+#     algorithm: "auto"  # auto, ball_tree, kd_tree, brute
+
+# # 提示词配置
+# prompts:
+#   model: "gpt-4"
+#   temperature: 0.7
+#   max_tokens: 2000
+#   n_candidates: 3  # 每次生成的候选数量
+
+# # 沙箱配置
+# sandbox:
+#   timeout: 300  # 秒
+#   max_features_to_select: 30
+#   n_repeats: 3
+#   cv_folds: 5
+#   test_datasets:
+#     - "madelon_like"
+#     - "gisette_like"
+#     - "high_corr"
+
+# # 路由配置
+# router:
+#   similarity_top_k: 10
+#   default_method: "mRMR"
+  
+# # 验证配置
+# validation:
+#   n_repeats: 10
+#   n_folds: 5
+#   significance_level: 0.05
+  
+# # LLM 配置
+# # llm:
+# #   provider: "openai"  # openai, anthropic, local
+# #   api_key_env: "OPENAI_API_KEY"
+# #   model: "gpt-4"
+# #   temperature: 0.7
+
+# # config/settings.yaml (添加 DeepSeek 配置)
+
+# # LLM 配置
+# llm:
+#   provider: "deepseek-math"  # openai, deepseek, deepseek-math, deepseek-reasoner, claude, vllm
+  
+#   # DeepSeek 配置
+#   deepseek:
+#     api_key_env: "DEEPSEEK_API_KEY"
+#     models:
+#       math:
+#         model: "deepseek-math"
+#         temperature: 0.7
+#         max_tokens: 4096
+#       reasoner:
+#         model: "deepseek-reasoner"
+#         temperature: 0.7
+#         max_tokens: 8192
+#       chat:
+#         model: "deepseek-chat"
+#         temperature: 0.7
+#         max_tokens: 4096
+    
+#     # 成本限制 (可选)
+#     cost_limit:
+#       daily: 10.0    # 每日最大花费 (USD)
+#       monthly: 100.0  # 每月最大花费 (USD)
+# config/settings.yaml
+
+project:
+  name: "Feature Selection Factory"
+  version: "1.0.0"
+
+# ... (dsl, sandbox 等其他配置保持不变) ...
+
+# LLM 配置 (修改为纯本地)
+llm:
+  provider: "vllm"  # 默认使用 vllm
+  
+  vllm:
+    # 👇 请在这里填入您服务器上的真实路径，以后就不用每次敲命令了
+    model_path: "../../../data1/fangsensen/deepseek-math-7b-rl"
+    gpu_memory_utilization: 0.9
+    max_tokens: 2048
+    temperature: 0.9
+
+  # API 配置 (留空或忽略即可)
+  deepseek:
+    api_key_env: "DEEPSEEK_API_KEY"

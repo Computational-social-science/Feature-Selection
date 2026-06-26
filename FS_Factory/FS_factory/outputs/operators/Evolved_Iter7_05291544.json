@@ -1,0 +1,13 @@
+{
+  "name": "Evolved_Iter7_05291544",
+  "formula_dsl": "mi(X, Y) - max_redundancy(X, S)",
+  "formula_math": "$J(X, Y, S) = I(X;Y) - \\max_{s \\in S} I(X;s)$",
+  "intuition": "该方法的直觉是，选择使互信息 $I(X;Y)$ 最大的特征 X，同时使得 X 与已选特征 S 的相关度最小。",
+  "theoretical_advantage": "从信息论的角度，该方法能够同时选择相关度高的特征和降低特征间的冗余度，从而提高预测的准确率。",
+  "avg_accuracy": 0.7450923800283878,
+  "creation_time": "2026-05-29T15:44:41.548965",
+  "bayes_avg_accuracy": 0.7322900232146703,
+  "rf_avg_accuracy": 0.7681030552175324,
+  "svm_avg_accuracy": 0.7460145694608342,
+  "knn_avg_accuracy": 0.7339618722205141
+}

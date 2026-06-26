@@ -1,0 +1,9 @@
+{
+  "name": "Evolved_Iter15_05291653",
+  "formula_dsl": "mi(X, Y) - max_redundancy(X, S)",
+  "formula_math": "$J(X, Y, S) = I(X;Y) - \\\\max_{s \\\\in S} I(X;s)$",
+  "intuition": "新方法的直观理解是：通过计算特征 X 与目标 Y 的互信息，然后减去 X 与已选特征 S 的最大互信息，得到一个特征选择准则。这样的设计旨在选择与目标 Y 相关性高且与其他已选特征冗余度低的特征。",
+  "theoretical_advantage": "新方法的理论优势是在信息论基础上，考虑了特征之间的冗余度，避免了单纯依赖相关性的不足。相比于 Evolved_Iter7_05291544 方法，新方法能更好地处理特征之间的复杂关系，提升特征选择的效果。",
+  "avg_accuracy": 0,
+  "creation_time": "2026-05-29T16:53:18.362450"
+}

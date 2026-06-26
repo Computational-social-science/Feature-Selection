@@ -1,0 +1,9 @@
+{
+  "name": "Evolved_Iter11_05092204",
+  "formula_dsl": "mi(X, Y) - sum([cmi(X, Y, s) for s in S]) / max(len(S), 1)",
+  "formula_math": "$I(X;Y) - \\\\frac{1}{|S|}\\\\sum_{s \\\\in S} I(X;s)$",
+  "intuition": "这个方法的直觉是，我们希望选择的特征 X 与目标 Y 的相关性 I(X;Y) 要高，与已选特征 S 的冗余度 I(X;s) 要低，并且 X 与 S 组合后对预测 Y 的增益要大。我们可以通过计算互信息 I(X;Y)，然后减去已选特征对 X 的平均冗余度来实现这些目标。",
+  "theoretical_advantage": "这个方法的理论优势在于，它综合考虑了特征与目标的相关性、特征之间的冗余度以及特征组合对目标的增益，从而可以在信息论的角度上优于现有的方法。",
+  "avg_accuracy": 0,
+  "creation_time": "2026-05-09T22:04:49.881572"
+}

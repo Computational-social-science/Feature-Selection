@@ -1,0 +1,9 @@
+{
+  "name": "Evolved_Iter15_02221631",
+  "formula_dsl": "mi(X, Y)",
+  "formula_math": "$J = I(X;Y)$",
+  "intuition": "Failed to parse response",
+  "theoretical_advantage": "Unknown",
+  "avg_accuracy": 0.8110914892301911,
+  "creation_time": "2026-02-22T16:31:36.851792"
+}

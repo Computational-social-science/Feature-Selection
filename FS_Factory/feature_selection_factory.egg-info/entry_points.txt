@@ -1,0 +1,4 @@
+[console_scripts]
+fs-benchmark = scripts.run_benchmark:main
+fs-compare = scripts.run_comparison:main
+fs-evolve = scripts.run_evolution:main

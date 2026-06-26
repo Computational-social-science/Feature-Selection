@@ -1,0 +1,9 @@
+{
+  "name": "New_Feature_Selection_Criterion_v2",
+  "formula_dsl": "mi(X, Y) - redundancy(X, S)",
+  "formula_math": "$I(X;Y) - \\\\frac{1}{|S|}\\\\sum_{s \\\\in S} I(X;s)$",
+  "intuition": "新方法选择特征的准则函数，它通过计算互信息 $I(X;Y)$ 减去平均冗余来衡量特征 X 的优劣。当平均冗余小的时候，说明特征 X 与已选特征 S 的冗余度较低，对目标 Y 的相关性较高，因此更适合被选为下一个特征。",
+  "theoretical_advantage": "新方法的准则函数基于信息论，考虑了特征的互信息和冗余度。相比于其他方法，它可能在某些数据集上表现更好，因为它更全面地考虑了特征的特征和冗余性。",
+  "avg_accuracy": 0,
+  "creation_time": "2026-05-29T15:44:24.109074"
+}

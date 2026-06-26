@@ -1,0 +1,9 @@
+{
+  "name": "Evolved_Iter3_04211416",
+  "formula_dsl": "mi(X, Y) - sum([cmi(X, Y, s) for s in S]) / max(len(S), 1",
+  "formula_math": "$J = I(X;Y) - \\\\frac{1}{|S|}\\\\sum_{s \\\\in S} I(X;Y|s)$",
+  "intuition": "新方法基于信息论中的互信息和条件互信息，选择特征时，除了考虑特征与目标的相关性（$I(X;Y)$），还考虑了特征与已选特征的冗余（$\\frac{1}{|S|}\\\\sum_{s \\\\in S} I(X;s)$）。",
+  "theoretical_advantage": "新方法从信息论的角度，综合考虑了特征与目标的相关性、特征与已选特征的冗余，使得选出的特征更符合信息增益最大化的原则。",
+  "avg_accuracy": 0,
+  "creation_time": "2026-04-21T14:16:48.877148"
+}

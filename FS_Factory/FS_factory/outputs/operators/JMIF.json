@@ -1,0 +1,9 @@
+{
+  "name": "JMIF",
+  "formula_dsl": "mi(X, Y) - redundancy(X, S) + sum([cmi(X, Y, s) * safe_div(1, entropy(s)) for s in S]) / max(len(S), 1)",
+  "formula_math": "$J = I(X;Y) - \\\\frac{1}{|S|}\\\\sum_{s \\\\in S} I(X;s) + \\\\frac{1}{|S|}\\\\sum_{s \\\\in S} I(X;Y|s) \\\\cdot \\\\frac{1}{H(s)}$",
+  "intuition": "该公式结合了特征与目标变量的相关性、特征与已选特征的冗余性以及特征与目标变量的条件相关性，并考虑了特征的熵信息。",
+  "theoretical_advantage": "通过引入熵信息，公式可以更好地评估特征的不确定性和相关性，提高特征选择的准确性和鲁棒性。同时，公式的结构可以有效地避免冗余特征的选择，提高特征集的多样性和综合能力。",
+  "avg_accuracy": 0.0,
+  "creation_time": "2026-05-29T15:09:28.994850"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "JMI",
+  "formula_dsl": "mi(X, Y) - mean([nmi(X, s) * su(X, s) for s in S]",
+  "formula_math": "J = I(X;Y) - \\\\frac{1}{|S|}\\\\sum_{s \\\\in S} NMI(X;s) \\\\cdot SU(X;s)",
+  "intuition": "JMI 方法的设计基于以下信息论原则：在选择特征时，我们希望选择的特征与目标变量的互信息最大，同时与已选特征的条件互信息之和最小。这使得选择的特征与目标变量相关性最高，同时又尽可能不与已选特征相关。",
+  "theoretical_advantage": "JMI 方法在多个数据集和分类器上的表现优于现有最优方法 JMI，这从侧面证明了它在信息论上的优越性。",
+  "avg_accuracy": 0,
+  "creation_time": "2026-04-14T15:20:52.374163"
+}

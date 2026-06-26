@@ -1,0 +1,13 @@
+{
+  "name": "MyNewMethod_v1",
+  "formula_dsl": "mi(X, Y) - max_redundancy(X, S)",
+  "formula_math": "$I(X;Y) - \\\\max_{s \\\\in S} [I(X;s)]$",
+  "intuition": "这个方法的直觉是，我们希望选择的特征 X 与目标 Y 的相关性 I(X;Y) 要大，同时与其他已选特征的冗余要小，即 I(X;s) 尽可能小。所以，我们选择使 I(X;Y) - max_{s in S} [I(X;s)] 最大的特征。",
+  "theoretical_advantage": "这个方法的优越性在于，它考虑了特征与目标的相关性和与其他已选特征的冗余性。相比于其他方法，它通过最大化互信息与已选特征的最大冗余来减少冗余，从而可能选择出更好的特征。",
+  "avg_accuracy": 0.6313076416337285,
+  "creation_time": "2026-04-21T12:42:28.637072",
+  "bayes_avg_accuracy": 0.5653930610452349,
+  "rf_avg_accuracy": 0.7010210803689064,
+  "svm_avg_accuracy": 0.6467610891523936,
+  "knn_avg_accuracy": 0.6120553359683794
+}

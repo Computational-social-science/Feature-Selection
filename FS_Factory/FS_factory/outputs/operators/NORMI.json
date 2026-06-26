@@ -1,0 +1,9 @@
+{
+  "name": "NORMI",
+  "formula_dsl": "mi(X, Y) - mean([max(0, mi(X, s) - cmi(X, Y, s)) for s in S]) + safe_div(sum([cmi(X, Y, s) for s in S]), max(len(S), 1))",
+  "formula_math": "$J = I(X;Y) - \\\\frac{1}{|S|}\\\\sum_{s \\\\in S} \\\\max(0, I(X;s) - I(X;Y|s)) + \\\\frac{1}{|S|}\\\\sum_{s \\\\in S} I(X;Y|s)$",
+  "intuition": "该公式通过结合互信息、条件互信息和归一化处理来衡量特征与目标变量的相关性和冗余性",
+  "theoretical_advantage": "通过引入归一化因子和条件互信息，该公式能够更好地捕捉特征之间的关系和目标变量的依赖性，从而实现更有效的特征选择",
+  "avg_accuracy": 0.0,
+  "creation_time": "2026-05-29T14:46:01.490745"
+}

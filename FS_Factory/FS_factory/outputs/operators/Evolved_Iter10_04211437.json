@@ -1,0 +1,9 @@
+{
+  "name": "Evolved_Iter10_04211437",
+  "formula_dsl": "mi(X, Y) - redundancy(X, S)",
+  "formula_math": "$J = I(X;Y) - \\\\frac{1}{|S|}\\\\sum_{s \\\\in S} I(X;s)$",
+  "intuition": "新方法通过计算互信息 I(X;Y)，然后减去平均冗余度，来衡量特征 X 对目标 Y 的关联性和避免冗余。这样做的原因是，互信息度量 X 与 Y 的关联性，而平均冗余度度量 X 与已有特征 S 的平均关联性，通过相减，我们可以得到 X 对目标 Y 的净贡献。",
+  "theoretical_advantage": "新方法在信息论上优于 JMI 等传统方法，因为它直接通过互信息和冗余度的差值来衡量特征的关联性和冗余性，而 JMI 等方法是通过先计算互信息再减去冗余度，这样可能会导致冗余度被计算两次。",
+  "avg_accuracy": 0,
+  "creation_time": "2026-04-21T14:37:46.037637"
+}

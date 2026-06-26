@@ -1,0 +1,13 @@
+{
+  "name": "CMIFS",
+  "formula_dsl": "mi(X, Y) - max_redundancy(X, S)",
+  "formula_math": "$J = I(X;Y) - \\\\max_{s \\\\in S} I(X;s)$",
+  "intuition": "CMIFS 算子选择具有最大互信息的特征，同时最小化与其他已选特征的冗余。这种设计理念旨在平衡特征的互信息和冗余度，在相关性和冗余度之间取得平衡，提高模型的预测性能。",
+  "theoretical_advantage": "与其他 SOTA 方法相比，CMIFS 算子在相关性和冗余度之间的平衡上具有理论上的优势。",
+  "avg_accuracy": 0.512439393939394,
+  "creation_time": "2026-04-14T16:32:52.359593",
+  "bayes_avg_accuracy": 0.47231818181818186,
+  "rf_avg_accuracy": 0.5998484848484849,
+  "svm_avg_accuracy": 0.5174621212121212,
+  "knn_avg_accuracy": 0.46012878787878786
+}

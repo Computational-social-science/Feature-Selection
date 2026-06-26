@@ -1,0 +1,9 @@
+{
+  "name": "Unknown",
+  "formula_dsl": "mi(X, Y)",
+  "formula_math": "$J = I(X;Y)$",
+  "intuition": "Failed to parse response",
+  "theoretical_advantage": "Unknown",
+  "avg_accuracy": 0.8110914892301911,
+  "creation_time": "2026-02-22T15:46:41.420703"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "New Feature Selection Criterion",
+  "formula_dsl": "mi(X, Y) - 0.5 * redundancy(X, S)",
+  "formula_math": "$J = I(X;Y) - 0.5 \\cdot R(X,S)$",
+  "intuition": "我们的新方法基于互信息和平均冗余度。首先，互信息度量了特征 X 与目标 Y 的相关性。然后，平均冗余度度量了特征 X 与已选特征 S 的冗余。我们的新方法将这两个度量的差值作为特征 X 的选择准则。",
+  "theoretical_advantage": "与现有方法相比，我们的新方法在处理冗余特征时更加稳健。在实际数据上，我们的新方法通常能取得更好的表现。",
+  "avg_accuracy": 0.8110914892301911,
+  "creation_time": "2026-02-22T15:01:49.907437"
+}

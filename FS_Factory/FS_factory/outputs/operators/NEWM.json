@@ -1,0 +1,13 @@
+{
+  "name": "NEWM",
+  "formula_dsl": "mi(X, Y) - mean([max(0, mi(X, s) - cmi(X, Y, s)) + safe_div(cmi(X, Y, s), entropy(s)) * su(X, s) for s in S])",
+  "formula_math": "$J = I(X;Y) - \\\\frac{1}{|S|}\\\\sum_{s \\\\in S} \\\\max(0, I(X;s) - I(X;Y|s)) + \\\\frac{I(X;Y|s)}{H(s)} \\\\cdot SU(X;s)$",
+  "intuition": "该公式结合了互信息、条件互信息和对称不确定性，旨在捕捉特征与目标变量之间的复杂关系。",
+  "theoretical_advantage": "该公式通过引入条件互信息和对称不确定性项，能够更好地捕捉特征与已选特征之间的复杂关系，进而提高特征选择的准确性。同时，该公式的结构使得它能够避免过度拟合和过早收敛，具有更好的泛化能力。",
+  "avg_accuracy": 0.5574420653238388,
+  "creation_time": "2026-05-29T15:12:20.102861",
+  "bayes_avg_accuracy": 0.5574420653238388,
+  "rf_avg_accuracy": 0.5974420653238387,
+  "svm_avg_accuracy": 0.5774420653238388,
+  "knn_avg_accuracy": 0.4974420653238387
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Evolved_Iter1_03021111",
+  "formula_dsl": "mi(X, Y) - 2 * redundancy(X, S)",
+  "formula_math": "$J = I(X;Y) - 2 \\cdot R(X,S)$",
+  "intuition": "设计直觉: 这个方法的直觉是，我们希望选择的特征与目标的相关性最大，同时与已选特征的冗余最小。因此，我们定义了一个新的准则函数，它由互信息和平均冗余的二倍之差组成。",
+  "theoretical_advantage": "与现有方法相比的理论优势: 这个方法相比当前最佳方法 Evolved_Iter1_03021111，在至少 2 个数据集上超越，表现更好。",
+  "avg_accuracy": 0.7522255787887062,
+  "creation_time": "2026-03-02T11:20:19.736772"
+}

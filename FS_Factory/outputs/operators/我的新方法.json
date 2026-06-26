@@ -1,0 +1,9 @@
+{
+  "name": "我的新方法",
+  "formula_dsl": "mi(X, Y) - mean([max(0, mi(X, s) - cmi(X, Y, s)) for s in S])",
+  "formula_math": "$J = I(X;Y) - \frac{1}{|S|}\\sum_{s \\in S} \\max(0, I(X;s) - I(X;Y|s))$",
+  "intuition": "我的设计直觉是：我想要设计一个方法，它能够同时考虑到特征与目标的相关性（mi(X, Y)），特征之间的冗余（mean([mi(X, s) for s in S])），以及特征与目标的互信息减去已选特征对目标的互信息（max(0, mi(X, s) - cmi(X, Y, s))）。",
+  "theoretical_advantage": "我的方法与现有方法相比的理论优势是：我的方法可以同时考虑到特征与目标的相关性、特征之间的冗余，以及特征与目标的互信息减去已选特征对目标的互信息，从而能够更好地选择特征。",
+  "avg_accuracy": 0.7072588954284342,
+  "creation_time": "2026-02-22T16:27:03.612835"
+}

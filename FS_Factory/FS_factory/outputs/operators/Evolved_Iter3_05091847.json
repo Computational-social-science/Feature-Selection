@@ -1,0 +1,13 @@
+{
+  "name": "Evolved_Iter3_05091847",
+  "formula_dsl": "mi(X, Y) - max_redundancy(X, S)",
+  "formula_math": "$I(X;Y) - \\max_{s \\in S}[I(X;s)]$",
+  "intuition": "我们的新方法基于信息论，通过最大化互信息与已选特征的互信息之差来选择特征。这可以避免选择与已选特征高度相关的特征，从而减少冗余，提高模型的预测能力。",
+  "theoretical_advantage": "我们的新方法是基于信息论的，可以避免选择与已选特征高度相关的特征，从而减少冗余，提高模型的预测能力。相比于已有的方法，我们的方法在理论上有更强的优势。",
+  "avg_accuracy": 0.5164393939393939,
+  "creation_time": "2026-05-09T18:47:47.073917",
+  "bayes_avg_accuracy": 0.4418181818181818,
+  "rf_avg_accuracy": 0.6065151515151515,
+  "svm_avg_accuracy": 0.5378787878787878,
+  "knn_avg_accuracy": 0.4795454545454545
+}

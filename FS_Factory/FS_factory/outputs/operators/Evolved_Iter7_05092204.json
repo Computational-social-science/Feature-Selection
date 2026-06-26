@@ -1,0 +1,9 @@
+{
+  "name": "Evolved_Iter7_05092204",
+  "formula_dsl": "mi(X, Y) - sum([cmi(X, Y, s) for s in S]) / max(len(S), 1)",
+  "formula_math": "$I(X;Y) - \\\\frac{1}{|S|}\\\\sum_{s \\\\in S} I(X;s)$",
+  "intuition": "这个方法的直觉是：我们希望选出的特征 X 与目标 Y 的相关性 I(X;Y) 要高，同时与其他已选特征的冗余度要低。我们将平均冗余度 sum([cmi(X, Y, s) for s in S]) / max(len(S), 1) 从 I(X;Y) 中减去，得到新的准则函数。",
+  "theoretical_advantage": "这个方法的理论优势是：在信息论中，互信息 I(X;Y) 度量 X 与 Y 的相关性，条件互信息 I(X;Y|s) 度量 X 与 Y 在给定 s 时的相关性。我们的准则函数通过减去平均冗余度，提高了特征选择的有效性，在理论上优于 JMI 等方法。",
+  "avg_accuracy": 0,
+  "creation_time": "2026-05-09T22:04:31.918397"
+}

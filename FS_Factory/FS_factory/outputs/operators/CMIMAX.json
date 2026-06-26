@@ -1,0 +1,13 @@
+{
+  "name": "CMIMAX",
+  "formula_dsl": "mi(X, Y) - max([max(0, mi(X, s) - cmi(X, Y, s)) + safe_div(cmi(X, Y, s), entropy(s)) for s in S])",
+  "formula_math": "$J = I(X;Y) - \\\\max_{s \\\\in S}\\\\left[\\\\max(0, I(X;s) - I(X;Y|s)) + \\\\frac{I(X;Y|s)}{H(s)}\\\\right]$",
+  "intuition": "该公式结合了互信息和条件互信息来评估特征与目标变量的相关性，同时考虑到特征与已选特征之间的冗余和条件依赖",
+  "theoretical_advantage": "相比于 JMI，CMIMAX 算法在选择特征时考虑了条件互信息和熵的关系，可以更好地捕捉特征之间的复杂依赖关系和冗余，从而提高特征选择的准确率和鲁棒性",
+  "avg_accuracy": 0.5574420653238388,
+  "creation_time": "2026-05-29T15:11:12.913020",
+  "bayes_avg_accuracy": 0.5574420653238388,
+  "rf_avg_accuracy": 0.5974420653238387,
+  "svm_avg_accuracy": 0.5774420653238388,
+  "knn_avg_accuracy": 0.4974420653238387
+}

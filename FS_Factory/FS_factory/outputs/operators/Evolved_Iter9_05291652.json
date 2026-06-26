@@ -1,0 +1,9 @@
+{
+  "name": "Evolved_Iter9_05291652",
+  "formula_dsl": "mi(X, Y) - max_redundancy(X, S)",
+  "formula_math": "$J(X, Y, S) = I(X;Y) - \\max_{s \\in S} I(X;s)$",
+  "intuition": "新方法的直觉是，我们希望选择的特征能够最大化与目标变量的互信息，同时又与已选特征的相关性最小。所以，我们选择了互信息与最大冗余的差值作为准则函数。",
+  "theoretical_advantage": "新方法的理论优势是，相比于其他方法，它更加关注特征与目标变量的相关性，同时抑制了特征之间的冗余，从而能够更好地选择出对目标变量有用的特征。",
+  "avg_accuracy": 0,
+  "creation_time": "2026-05-29T16:52:55.034798"
+}

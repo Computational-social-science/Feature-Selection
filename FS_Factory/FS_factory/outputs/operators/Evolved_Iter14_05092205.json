@@ -1,0 +1,9 @@
+{
+  "name": "Evolved_Iter14_05092205",
+  "formula_dsl": "mi(X, Y) - sum([cmi(X, Y, s) for s in S]) / max(len(S), 1)",
+  "formula_math": "$J = I(X;Y) - \\\\frac{1}{|S|}\\\\sum_{s \\\\in S} I(X;s)$",
+  "intuition": "新方法旨在通过计算每个候选特征与目标变量的互信息，并减去其与已选特征的条件互信息的平均值来评估特征的重要性。这样可以同时考虑特征与目标变量的相关性和与其他特征的冗余性。",
+  "theoretical_advantage": "相比现有方法，新方法在信息论上更全面地考虑了特征的重要性，能够更好地平衡相关性和冗余性，有望提升特征选择的效果。",
+  "avg_accuracy": 0,
+  "creation_time": "2026-05-09T22:05:02.313502"
+}

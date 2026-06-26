@@ -1,0 +1,13 @@
+{
+  "name": "NewAlgorithm",
+  "formula_dsl": "mi(X, Y) - mean([cmi(X, Y, s) for s in S])",
+  "formula_math": "$J = I(X;Y) - \\\\frac{1}{|S|}\\sum_{s \\\\in S} I(X;s)$",
+  "intuition": "新算法基于信息论，认为好的特征应与目标相关性强（高互信息），且与其他已选特征冗余度低。该公式通过互信息与冗余度的差值来衡量特征的好坏。",
+  "theoretical_advantage": "新算法在信息论和互信息的基础上，通过互信息与冗余度的差值来衡量特征的好坏，相比于现有的方法，具有更高的理论基础和更合理的数学形式，在理论上更优越。",
+  "avg_accuracy": 0.7235136060182636,
+  "creation_time": "2026-04-21T14:17:18.429290",
+  "bayes_avg_accuracy": 0.6916444369169101,
+  "rf_avg_accuracy": 0.7597853241309227,
+  "svm_avg_accuracy": 0.7495060055609659,
+  "knn_avg_accuracy": 0.693118657464256
+}

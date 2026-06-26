@@ -1,0 +1,9 @@
+{
+  "name": "MyNewMethod_v2",
+  "formula_dsl": "mi(X, Y) - sum([cmi(X, Y, s) for s in S]) / max(len(S), 1",
+  "formula_math": "$J(X, Y, S) = I(X;Y) - \\\\frac{1}{|S|}\\sum_{s \\\\in S} I(X;s)$",
+  "intuition": "这个新方法通过计算候选特征 X 与目标 Y 的互信息，然后减去其与已选特征 S 的平均冗余度来衡量其优劣。",
+  "theoretical_advantage": "这个新方法的优越性在于它同时考虑了候选特征与目标变量的相关性和候选特征间的冗余性。相比于传统的互信息方法，它更加准确地反映了特征对目标变量的实际贡献。",
+  "avg_accuracy": 0,
+  "creation_time": "2026-04-21T14:17:10.313859"
+}

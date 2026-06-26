@@ -1,0 +1,13 @@
+{
+  "name": "NOCI",
+  "formula_dsl": "mi(X, Y) - sum([max(0, mi(X, s) - cmi(X, Y, s)) for s in S]) / (1 + redundancy(X, S))",
+  "formula_math": "$J = I(X;Y) - \\\\frac{\\\\sum_{s \\\\in S} \\\\max(0, I(X;s) - I(X;Y|s))}{1 + \\\\frac{1}{|S|}\\\\sum_{s \\\\in S} I(X;s)}$",
+  "intuition": "公式考虑了特征X与目标Y的相关性，以及特征X与已选特征S的冗余性和互补性。",
+  "theoretical_advantage": "该公式在理论上超越JMI，因为它考虑了特征X与已选特征S的冗余性和互补性，而不是简单地求和。这可以更好地评估特征X对预测Y的贡献度。",
+  "avg_accuracy": 0.32836538461538456,
+  "creation_time": "2026-05-29T14:44:25.658619",
+  "bayes_avg_accuracy": 0.3566849816849817,
+  "rf_avg_accuracy": 0.3497619047619048,
+  "svm_avg_accuracy": 0.3369230769230769,
+  "knn_avg_accuracy": 0.2700915750915751
+}

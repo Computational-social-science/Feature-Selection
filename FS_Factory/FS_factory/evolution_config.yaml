@@ -1,0 +1,40 @@
+# evolution_config.yaml 示例
+
+# 演化迭代次数
+iterations: 10
+
+# 输出目录
+output: ./outputs
+
+# Benchmark 结果目录
+benchmark_dir: ./outputs/benchmark_results
+
+# 数据集目录
+data_dir: ./data/raw
+
+# 每次演化评估使用的数据集数量
+n_eval_datasets: 1
+
+# LLM 后端选择: 'local' (vLLM) 或 'nvidia' (NVIDIA API)
+backend: nvidia
+
+# 本地模型路径 (仅当 backend 为 local 时有效)
+model_path: /data1/fangsensen/deepseek-math-7b-rl
+
+# NVIDIA API Key (仅当 backend 为 nvidia 时有效)
+nvidia_api_key: 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
+
+# NVIDIA API 模型名称 (仅当 backend 为 nvidia 时有效)
+nvidia_model: meta/llama-3.1-70b-instruct
+
+# 是否在评估时使用 GPU
+use_gpu: true
+
+# vLLM 张量并行大小 (GPU 数量，仅当 backend 为 local 时有效)
+tensor_parallel_size: 2
+
+# vLLM GPU 显存占用率 (仅当 backend 为 local 时有效)
+gpu_memory_utilization: 0.8
+
+# 将所有输出保存到指定文件
+log_file: evolution_run_$(date +%Y%m%d_%H%M%S).txt

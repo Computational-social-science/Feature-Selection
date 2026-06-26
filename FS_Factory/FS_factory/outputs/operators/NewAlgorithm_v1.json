@@ -1,0 +1,9 @@
+{
+  "name": "NewAlgorithm_v1",
+  "formula_dsl": "mi(X, Y) - sum([cmi(X, Y, s) for s in S]) / max(len(S), 1)",
+  "formula_math": "$I(X;Y) - \\\\frac{\\\\sum_{s \\\\in S} I(X;Y|s)}{max(|S|, 1)$",
+  "intuition": "新算法通过计算每个特征与目标变量的互信息，然后减去其与已选特征的条件互信息的平均值，来衡量每个特征的信息增益。这样既考虑了特征与目标变量的相关性，又考虑了特征之间的冗余性，从而可以在一定程度上避免过拟合。",
+  "theoretical_advantage": "新算法在信息增益的计算中引入了条件互信息，考虑了特征之间的冗余性，使得选择的特征更具有区分性，从而在一定程度上降低了过拟合的风险。",
+  "avg_accuracy": 0,
+  "creation_time": "2026-05-09T22:05:06.248277"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "JMIC",
+  "formula_dsl": "mi(X, Y) - safe_div(sum([max(0, mi(X, s) - cmi(X, Y, s)) * log(abs(mi(X, s)) + EPS) for s in S]), max(len(S), 1)) + safe_div(sum([cmi(X, Y, s) for s in S]), max(len(S), 1))",
+  "formula_math": "$J = I(X;Y) - \\\\frac{1}{|S|}\\\\sum_{s \\\\in S} [I(X;s) - I(X;Y|s)] \\\\log(I(X;s)+\\\\epsilon) + \\\\frac{1}{|S|}\\\\sum_{s \\\\in S} I(X;Y|s)$",
+  "intuition": "该公式结合了互信息和条件互信息，考虑了特征与目标变量之间的相关性以及特征与已选特征之间的冗余性，通过对数函数进一步加强了信息量的关联性。",
+  "theoretical_advantage": "该公式优越性在于考虑了特征与目标变量之间的直接相关性和间接相关性，能够更好地捕捉特征之间的复杂关系，并通过对数函数使得信息量的关联性更加明显，能够在特征选择中发挥更好的作用。",
+  "avg_accuracy": 0.0,
+  "creation_time": "2026-05-29T14:48:53.331289"
+}

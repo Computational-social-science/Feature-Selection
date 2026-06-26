@@ -1,0 +1,9 @@
+{
+  "name": "Evolved_Iter7_04211417",
+  "formula_dsl": "mi(X, Y) - sum([cmi(X, Y, s) for s in S]) / max(len(S), 1",
+  "formula_math": "$J = I(X;Y) - \\\\frac{1}{|S|}\\\\sum_{s \\\\in S} I(X;s)$",
+  "intuition": "新方法旨在通过最大化互信息与已选特征的信息增益来选择特征，同时减去平均冗余度，以减少特征之间的冗余。",
+  "theoretical_advantage": "相比当前最先进的方法 JMI，新方法在信息增益和冗余度上都进行了优化，理论上应该能取得更好的表现。",
+  "avg_accuracy": 0,
+  "creation_time": "2026-04-21T14:17:14.010335"
+}

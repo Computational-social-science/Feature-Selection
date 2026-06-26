@@ -1,0 +1,13 @@
+{
+  "name": "Evolved_Iter2_05291509",
+  "formula_dsl": "mi(X, Y) - mean([max(0, mi(X, s) - cmi(X, Y, s)) + safe_div(cmi(X, Y, s), entropy(s)) for s in S])",
+  "formula_math": "$J = I(X;Y) - \\\\frac{1}{|S|}\\\\sum_{s \\\\in S} \\\\max(0, I(X;s) - I(X;Y|s)) + \\\\frac{I(X;Y|s)}{H(s)}$",
+  "intuition": "该公式将特征X与目标Y的相关性与特征X与已选特征S的条件互信息进行结合，同时考虑了特征X与S的冗余和条件熵的影响",
+  "theoretical_advantage": "该公式在JMI的基础上增加了条件熵的权重，能够更好地评估特征X与已选特征S的冗余和条件互信息，从而实现更好的特征选择效果。此外，使用了安全除法和对数保护，能够避免数值不稳定性问题",
+  "avg_accuracy": 0.5574420653238388,
+  "creation_time": "2026-05-29T15:09:58.045006",
+  "bayes_avg_accuracy": 0.5574420653238388,
+  "rf_avg_accuracy": 0.5974420653238387,
+  "svm_avg_accuracy": 0.5774420653238388,
+  "knn_avg_accuracy": 0.4974420653238387
+}

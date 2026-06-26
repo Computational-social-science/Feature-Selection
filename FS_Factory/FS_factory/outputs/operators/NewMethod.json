@@ -1,0 +1,9 @@
+{
+  "name": "NewMethod",
+  "formula_dsl": "mi(X, Y) - sum([cmi(X, Y, s) for s in S]) / max(len(S), 1",
+  "formula_math": "$J = I(X;Y) - \\\\frac{1}{|S|}\\\\sum_{s \\\\in S} I(X;s)$",
+  "intuition": "NewMethod 旨在通过计算每个特征与目标变量的互信息，并减去每个特征与已选特征的平均互信息，来衡量特征的相关性和冗余性。这样可以使得选择的特征既与目标变量相关，又不会与已选特征重复。",
+  "theoretical_advantage": "在信息论中，互信息是衡量两个随机变量之间依赖性的一个度量。NewMethod 通过计算每个特征与目标变量的互信息，并减去每个特征与已选特征的平均互信息，来衡量特征的相关性和冗余性。这样可以在保留相关性的同时减少冗余，从而提高选择特征的性能。",
+  "avg_accuracy": 0,
+  "creation_time": "2026-04-21T14:17:03.028465"
+}

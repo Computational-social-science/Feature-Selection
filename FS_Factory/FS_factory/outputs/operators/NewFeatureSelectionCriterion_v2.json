@@ -1,0 +1,9 @@
+{
+  "name": "NewFeatureSelectionCriterion_v2",
+  "formula_dsl": "mi(X, Y) - sum([cmi(X, Y, s) for s in S]) / max(len(S), 1)",
+  "formula_math": "$J = I(X;Y) - \\\\frac{1}{|S|}\\\\sum_{s \\\\in S} I(X;Y|s)$",
+  "intuition": "该准则函数在信息论中，通过计算特征 X 与目标 Y 的互信息，然后减去特征 X 与已选特征 S 的条件互信息的平均值，来衡量特征 X 与已选特征 S 的冗余度。这种设计旨在选择那些与目标 Y 相关性高，且与已选特征 S 冗余度低的特征。",
+  "theoretical_advantage": "相比其他现有的特征选择准则函数，该准则函数在信息论上更全面地考虑了特征 X 与已选特征 S 的互信息关系，理论上可以更准确地选择特征。",
+  "avg_accuracy": 0.0,
+  "creation_time": "2026-05-09T18:47:10.734113"
+}

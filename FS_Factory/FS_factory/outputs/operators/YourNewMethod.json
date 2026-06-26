@@ -1,0 +1,9 @@
+{
+  "name": "YourNewMethod",
+  "formula_dsl": "mi(X, Y) - sum([cmi(X, Y, s) for s in S]) / max(len(S), 1)",
+  "formula_math": "$I(X;Y) - \\\\frac{1}{|S|}\\sum_{s \\\\in S} I(X;Y|s)$",
+  "intuition": "这个方法的直觉是，我们选择使互信息 $I(X;Y)$ 减去条件互信息 $I(X;Y|s)$ 的平均值最大的特征 $X$。这样既考虑了特征 $X$ 与目标 $Y$ 的相关性，又考虑了特征 $X$ 与已选特征 $S$ 的冗余性。",
+  "theoretical_advantage": "相比于其他方法，这个方法在理论机制上更全面，因为它既考虑了特征 $X$ 与目标 $Y$ 的相关性，又考虑了特征 $X$ 与已选特征 $S$ 的冗余性。",
+  "avg_accuracy": 0,
+  "creation_time": "2026-05-09T22:04:58.752593"
+}

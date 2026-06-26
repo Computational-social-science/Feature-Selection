@@ -1,0 +1,9 @@
+{
+  "name": "NewFeatureSelectionCriterion_v1",
+  "formula_dsl": "mi(X, Y) - redundancy(X, S)",
+  "formula_math": "$I(X;Y) - \\\\frac{1}{|S|}\\\\sum_{s \\\\in S} I(X;s)$",
+  "intuition": "新方法的直观解释是，它通过计算互信息 I(X;Y) 减去平均冗余来衡量特征 X 与目标 Y 的相关性，同时考虑了特征 X 与已选特征 S 的冗余。这种设计旨在平衡相关性和冗余，以选择更优的特征。",
+  "theoretical_advantage": "新方法的理论优势在于，它不仅考虑了特征与目标的相关性，还考虑了特征与已选特征的冗余。相比于传统的互信息度量，新方法更全面地反映了特征的重要性，有望在实际应用中取得更好的效果。",
+  "avg_accuracy": 0,
+  "creation_time": "2026-04-21T14:08:49.263582"
+}

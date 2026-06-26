@@ -1,0 +1,9 @@
+{
+  "name": "Evolved_Iter6_05291544",
+  "formula_dsl": "mi(X, Y) - redundancy(X, S)",
+  "formula_math": "$I(X;Y) - \\\\frac{1}{|S|}\\\\sum_{s \\\\in S} I(X;s)$",
+  "intuition": "新方法旨在通过计算互信息与平均冗余的差值来选择特征。相关性高且冗余低的特征会被优先选中。",
+  "theoretical_advantage": "新方法从信息论的角度出发，考虑到特征与目标的相关性和与其他已选特征的冗余性。相比于其他方法，新方法能够在保留相关性的同时降低冗余，从而更好地选择特征。",
+  "avg_accuracy": 0,
+  "creation_time": "2026-05-29T15:44:38.628786"
+}

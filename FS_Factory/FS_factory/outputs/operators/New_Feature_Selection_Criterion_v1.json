@@ -1,0 +1,9 @@
+{
+  "name": "New_Feature_Selection_Criterion_v1",
+  "formula_dsl": "mi(X, Y) - sum([cmi(X, Y, s) for s in S]) / max(len(S), 1)",
+  "formula_math": "$I(X;Y) - \\\\frac{1}{|S|}\\\\sum_{s \\\\in S} I(X;Y|s)$",
+  "intuition": "新方法试图在相关性 I(X;Y) 和冗余度 \\\\frac{1}{|S|}\\\\sum_{s \\\\in S} I(X;s) 之间取得平衡。",
+  "theoretical_advantage": "新方法在信息论上更接近 JMI 方法，其主要区别在于惩罚项的计算方式。",
+  "avg_accuracy": 0,
+  "creation_time": "2026-05-09T22:04:17.459902"
+}

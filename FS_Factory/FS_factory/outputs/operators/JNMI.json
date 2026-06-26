@@ -1,0 +1,9 @@
+{
+  "name": "JNMI",
+  "formula_dsl": "mi(X, Y) - sum([max(0, mi(X, s) - cmi(X, Y, s)) * safe_div(cmi(X, Y, s), entropy(s)) for s in S]) / max(len(S), 1)",
+  "formula_math": "$J = I(X;Y) - \\\\frac{1}{|S|}\\\\sum_{s \\\\in S} NMI(X;s) \\\\cdot SU(X;s)$",
+  "intuition": "优先选择与目标变量强相关且与已选特征具有低冗余性的特征，同时考虑条件互补性",
+  "theoretical_advantage": "通过结合条件互补性和冗余度惩罚，JNMI 算法可以更好地捕捉特征与目标变量之间的复杂关系，同时避免特征冗余，从而提高特征选择的准确性和鲁棒性。",
+  "avg_accuracy": 0.0,
+  "creation_time": "2026-05-29T15:13:17.116595"
+}

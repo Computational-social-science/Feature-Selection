@@ -1,0 +1,9 @@
+{
+  "name": "Evolved_Iter20_05291653",
+  "formula_dsl": "mi(X, Y) - max_redundancy(X, S)",
+  "formula_math": "$J(X, Y, S) = I(X;Y) - \\\\max_{s \\\\in S} I(X;s)$",
+  "intuition": "新方法通过减去最大冗余来选择特征，以减少冗余信息，提高特征的独立性和区分度，从而提高预测模型的性能。",
+  "theoretical_advantage": "该方法在信息论上优于当前最先进方法 Evolved_Iter7_05291544，因为新方法不仅考虑了相关性（mi(X, Y)），还考虑了最大冗余（max_redundancy(X, S)），从而更全面地评估了特征的贡献。",
+  "avg_accuracy": 0,
+  "creation_time": "2026-05-29T16:53:39.887483"
+}

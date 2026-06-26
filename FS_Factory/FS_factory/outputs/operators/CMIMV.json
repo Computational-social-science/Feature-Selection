@@ -1,0 +1,9 @@
+{
+  "name": "CMIMV",
+  "formula_dsl": "mi(X, Y) - max([max(0, mi(X, s) - cmi(X, Y, s)) for s in S]) + safe_div(sum([cmi(X, Y, s) for s in S]), max(len(S), 1))",
+  "formula_math": "$J = I(X;Y) - \\\\max_{s \\\\in S}\\\\left[\\\\max\\\\left(0, I(X;s) - I(X;Y|s)\\\\right)\\\\right] + \\\\frac{1}{\\\\max(|S|, 1)}\\\\sum_{s \\\\in S} I(X;Y|s)$",
+  "intuition": "该公式考虑了特征X与目标Y的相关性，减去特征X与已选特征S中最相关的特征的冗余，最后加上特征X与已选特征S的条件互信息之和。",
+  "theoretical_advantage": "该公式的优势在于它不仅考虑了特征与目标的相关性，还考虑了特征与已选特征之间的冗余和条件互信息，这样可以更好地选择出对预测目标最有用的特征，同时也避免了冗余特征的选取。",
+  "avg_accuracy": 0.0,
+  "creation_time": "2026-05-29T14:45:37.864532"
+}

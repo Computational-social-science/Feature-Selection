@@ -1,0 +1,9 @@
+{
+  "name": "Evolved_Iter3_04141504",
+  "formula_dsl": "mi(X, Y) - mean([nmi(X, s) * su(X, s) for s in S])",
+  "formula_math": "$J = I(X;Y) - \\\\frac{1}{|S|}\\\\sum_{s \\\\in S} NMI(X;s) \\\\cdot SU(X;s)$",
+  "intuition": "CMIFS 尝试在每个已选特征上计算归一化互信息 NMI(X;s) 与对称不确定性 SU(X;s) 的乘积，然后将这些乘积平均，得到的结果与互信息 I(X;Y) 相减，得到最终的准则函数。这种方法旨在同时考虑特征与目标的相关性和互斥性。",
+  "theoretical_advantage": "CMIFS 在考虑特征与目标的相关性（mi(X, Y)）的同时，减少了特征间的冗余度（mean([nmi(X, s) * su(X, s) for s in S]），从而可能提高特征选择的性能。",
+  "avg_accuracy": 0,
+  "creation_time": "2026-04-14T15:04:38.653807"
+}

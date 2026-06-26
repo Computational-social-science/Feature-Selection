@@ -1,0 +1,9 @@
+{
+  "name": "NACI",
+  "formula_dsl": "mi(X, Y) - safe_div(sum([max(0, mi(X, s) - cmi(X, Y, s)) * log(abs(mi(X, s)) + EPS) for s in S]), max(len(S), 1))",
+  "formula_math": "$J = I(X;Y) - \\\\frac{1}{|S|}\\\\sum_{s \\\\in S} \\\\max(0, I(X;s) - I(X;Y|s)) \\\\cdot \\\\log(|I(X;s)| + \\\\epsilon)$",
+  "intuition": "互信息与条件互信息之差，通过对数函数增强重要特征的权重",
+  "theoretical_advantage": "通过对互信息与条件互信息之差的对数函数权重，NACI 算法可以更好地区分特征之间的相关性和冗余性，增强特征选择的鲁棒性和准确性。同时，log 函数可以抑制过大的互信息值，避免特征选择偏向于高相关性但冗余度大的特征。",
+  "avg_accuracy": 0.0,
+  "creation_time": "2026-05-29T14:48:28.474935"
+}

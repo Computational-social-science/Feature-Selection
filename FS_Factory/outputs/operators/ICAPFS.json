@@ -1,0 +1,13 @@
+{
+  "name": "ICAPFS",
+  "formula_dsl": "mi(X, Y) - mean([max(0, mi(X, s) - cmi(X, Y, s)) for s in S])",
+  "formula_math": "$I(X;Y) - \\\\frac{1}{|S|}\\sum_{s \\\\in S} \\max(0, I(X;s) - I(X;Y|s))$",
+  "intuition": "ICAPFS 方法旨在减少特征选择的冗余度。首先，它计算每个特征与目标变量的互信息，然后对每个特征，计算其与已选特征的互信息之和，再从其与目标变量的互信息中减去这个和。这样就得到了每个特征的净互信息，然后取所有特征的净互信息平均值，得到最终的特征选择准则。",
+  "theoretical_advantage": "ICAPFS 方法在理论机制上超越了 JMI 方法。它通过最大化每个特征与已选特征的互信息之和与与其与目标变量的互信息之差，来减少特征选择的冗余度。这种机制使得 ICAPFS 方法在信息冗余消除方面具有明显的优势。",
+  "avg_accuracy": 0.3592462121212121,
+  "creation_time": "2026-04-07T23:55:52.191915",
+  "bayes_avg_accuracy": 0.37143939393939396,
+  "rf_avg_accuracy": 0.38962121212121215,
+  "svm_avg_accuracy": 0.38356060606060605,
+  "knn_avg_accuracy": 0.29236363636363644
+}
