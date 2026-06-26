@@ -1,0 +1,138 @@
+{
+  "GoodStudent": [
+    "Age",
+    "SocioEcon"
+  ],
+  "Age": [
+    "GoodStudent",
+    "SocioEcon",
+    "RiskAversion",
+    "DrivQuality",
+    "SeniorTrain"
+  ],
+  "SocioEcon": [
+    "HomeBase",
+    "AntiTheft",
+    "OtherCar",
+    "MakeModel",
+    "Airbag"
+  ],
+  "RiskAversion": [
+    "Age",
+    "HomeBase",
+    "AntiTheft",
+    "DrivQuality",
+    "DrivHist"
+  ],
+  "VehicleYear": [
+    "MakeModel",
+    "CarValue",
+    "Antilock",
+    "Airbag"
+  ],
+  "ThisCarDam": [
+    "ThisCarCost",
+    "Accident"
+  ],
+  "RuggedAuto": [
+    "MakeModel",
+    "Airbag",
+    "Cushioning"
+  ],
+  "Accident": [
+    "DrivQuality",
+    "PropCost",
+    "OtherCarCost",
+    "ThisCarDam"
+  ],
+  "MakeModel": [
+    "CarValue",
+    "SocioEcon",
+    "VehicleYear",
+    "RuggedAuto",
+    "Airbag",
+    "Antilock"
+  ],
+  "DrivQuality": [
+    "RiskAversion",
+    "DrivingSkill",
+    "Accident"
+  ],
+  "Mileage": [
+    "CarValue",
+    "HomeBase",
+    "Accident"
+  ],
+  "Antilock": [
+    "MakeModel",
+    "CarValue",
+    "VehicleYear"
+  ],
+  "DrivingSkill": [
+    "Age",
+    "DrivHist",
+    "DrivQuality"
+  ],
+  "SeniorTrain": [
+    "Age",
+    "RiskAversion",
+    "DrivQuality"
+  ],
+  "ThisCarCost": [
+    "CarValue",
+    "PropCost",
+    "ThisCarDam"
+  ],
+  "Theft": [
+    "ThisCarCost"
+  ],
+  "CarValue": [
+    "MakeModel",
+    "Mileage",
+    "VehicleYear",
+    "ThisCarCost"
+  ],
+  "HomeBase": [
+    "MakeModel",
+    "SocioEcon",
+    "RiskAversion"
+  ],
+  "AntiTheft": [
+    "SocioEcon",
+    "RiskAversion"
+  ],
+  "PropCost": [
+    "OtherCarCost",
+    "ThisCarCost"
+  ],
+  "OtherCarCost": [
+    "PropCost",
+    "ThisCarCost",
+    "Accident"
+  ],
+  "OtherCar": [
+    "SocioEcon"
+  ],
+  "MedCost": [
+    "Accident",
+    "Cushioning"
+  ],
+  "Cushioning": [
+    "MakeModel",
+    "Airbag",
+    "RuggedAuto"
+  ],
+  "Airbag": [
+    "MakeModel",
+    "VehicleYear",
+    "Cushioning"
+  ],
+  "ILiCost": [
+    "Mileage",
+    "Accident"
+  ],
+  "DrivHist": [
+    "RiskAversion",
+    "DrivingSkill"
+  ]
+}

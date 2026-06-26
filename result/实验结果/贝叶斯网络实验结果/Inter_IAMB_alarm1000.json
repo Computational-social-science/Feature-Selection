@@ -1,0 +1,206 @@
+{
+  "HISTORY": [
+    "LVFAILURE",
+    "HR",
+    "CO"
+  ],
+  "CVP": [
+    "PCWP",
+    "LVEDVOLUME",
+    "DISCONNECT"
+  ],
+  "PCWP": [
+    "CVP",
+    "HYPOVOLEMIA",
+    "LVEDVOLUME"
+  ],
+  "HYPOVOLEMIA": [
+    "PCWP",
+    "LVEDVOLUME",
+    "STROKEVOLUME",
+    "ERRCAUTER"
+  ],
+  "LVEDVOLUME": [
+    "HISTORY",
+    "CVP",
+    "PCWP",
+    "HYPOVOLEMIA"
+  ],
+  "LVFAILURE": [
+    "HISTORY",
+    "PCWP",
+    "LVEDVOLUME",
+    "STROKEVOLUME",
+    "FIO2"
+  ],
+  "STROKEVOLUME": [
+    "LVEDVOLUME",
+    "EXPCO2",
+    "HR",
+    "CO"
+  ],
+  "ERRLOWOUTPUT": [
+    "HRBP",
+    "HR"
+  ],
+  "HRBP": [
+    "ERRLOWOUTPUT",
+    "HREKG",
+    "HRSAT",
+    "HR"
+  ],
+  "HREKG": [
+    "ERRCAUTER",
+    "MINVOL",
+    "CATECHOL",
+    "HR"
+  ],
+  "ERRCAUTER": [
+    "HREKG",
+    "HRSAT",
+    "HR"
+  ],
+  "HRSAT": [
+    "PCWP",
+    "HRBP",
+    "HREKG",
+    "ERRCAUTER",
+    "CO"
+  ],
+  "INSUFFANESTH": [
+    "SAO2",
+    "PAP"
+  ],
+  "ANAPHYLAXIS": [
+    "DISCONNECT",
+    "BP"
+  ],
+  "TPR": [
+    "VENTALV",
+    "HR",
+    "CO",
+    "BP"
+  ],
+  "EXPCO2": [
+    "VENTLUNG",
+    "ARTCO2"
+  ],
+  "KINKEDTUBE": [
+    "PRESS",
+    "VENTTUBE",
+    "VENTLUNG",
+    "VENTALV"
+  ],
+  "MINVOL": [
+    "EXPCO2",
+    "INTUBATION",
+    "VENTALV",
+    "ARTCO2"
+  ],
+  "FIO2": [
+    "PVSAT",
+    "VENTALV"
+  ],
+  "PVSAT": [
+    "HYPOVOLEMIA",
+    "SAO2",
+    "SHUNT",
+    "VENTLUNG",
+    "ARTCO2"
+  ],
+  "SAO2": [
+    "PVSAT",
+    "INTUBATION",
+    "DISCONNECT",
+    "ARTCO2"
+  ],
+  "PAP": [
+    "INSUFFANESTH",
+    "PULMEMBOLUS",
+    "INTUBATION"
+  ],
+  "PULMEMBOLUS": [
+    "HREKG",
+    "PAP",
+    "SHUNT",
+    "DISCONNECT"
+  ],
+  "SHUNT": [
+    "SAO2",
+    "PULMEMBOLUS",
+    "INTUBATION",
+    "VENTLUNG"
+  ],
+  "INTUBATION": [
+    "EXPCO2",
+    "MINVOL",
+    "SHUNT",
+    "VENTALV"
+  ],
+  "PRESS": [
+    "LVEDVOLUME",
+    "KINKEDTUBE",
+    "INTUBATION",
+    "VENTTUBE"
+  ],
+  "DISCONNECT": [
+    "VENTMACH",
+    "VENTTUBE"
+  ],
+  "MINVOLSET": [
+    "SAO2",
+    "VENTMACH"
+  ],
+  "VENTMACH": [
+    "DISCONNECT",
+    "MINVOLSET",
+    "VENTTUBE"
+  ],
+  "VENTTUBE": [
+    "PVSAT",
+    "DISCONNECT",
+    "VENTMACH",
+    "VENTLUNG"
+  ],
+  "VENTLUNG": [
+    "TPR",
+    "EXPCO2",
+    "MINVOL",
+    "VENTALV"
+  ],
+  "VENTALV": [
+    "PVSAT",
+    "INTUBATION",
+    "VENTLUNG",
+    "ARTCO2"
+  ],
+  "ARTCO2": [
+    "EXPCO2",
+    "PVSAT",
+    "VENTLUNG",
+    "VENTALV",
+    "HR"
+  ],
+  "CATECHOL": [
+    "HRBP",
+    "ARTCO2",
+    "HR",
+    "BP"
+  ],
+  "HR": [
+    "STROKEVOLUME",
+    "HREKG",
+    "CATECHOL",
+    "CO"
+  ],
+  "CO": [
+    "LVFAILURE",
+    "STROKEVOLUME",
+    "HR",
+    "BP"
+  ],
+  "BP": [
+    "TPR",
+    "CO"
+  ]
+}

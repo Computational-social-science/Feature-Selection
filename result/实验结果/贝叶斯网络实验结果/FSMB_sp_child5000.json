@@ -1,0 +1,20 @@
+BirthAsphyxia: {1: {'Disease', 'Sick'}, 2: {'Disease', 'Sick'}}
+HypDistrib: {1: {'CardiacMixing', 'LowerBodyO2', 'DuctFlow', 'HypoxiaInO2'}, 2: {'CardiacMixing', 'LowerBodyO2', 'DuctFlow', 'HypoxiaInO2'}}
+HypoxiaInO2: {1: {'HypDistrib', 'LowerBodyO2', 'CardiacMixing', 'RUQO2', 'LungParench'}, 2: {'RUQO2', 'LungParench', 'LowerBodyO2', 'CardiacMixing'}, 3: {'RUQO2', 'LowerBodyO2', 'CardiacMixing', 'ChestXray'}}
+CO2: {1: {'LungParench', 'CO2Report'}, 2: {'LungParench', 'CO2Report'}, 3: {'LungParench', 'CO2Report'}}
+ChestXray: {1: {'LungParench', 'LungFlow', 'XrayReport'}, 2: {'LungParench', 'LungFlow', 'XrayReport'}, 3: {'LungParench', 'LungFlow', 'XrayReport'}, 4: {'LungParench', 'LungFlow', 'XrayReport'}, 5: {'LungParench', 'LungFlow', 'XrayReport'}}
+Grunting: {1: {'LungParench', 'GruntingReport', 'Sick'}, 2: {'LungParench', 'GruntingReport', 'Age', 'Sick'}}
+LVHreport: {1: {'LVH'}, 2: {'LVH'}}
+LowerBodyO2: {1: {'HypDistrib', 'LVH', 'HypoxiaInO2'}, 2: {'DuctFlow', 'HypoxiaInO2'}, 3: {'HypDistrib', 'LVH', 'HypoxiaInO2'}}
+RUQO2: {1: {'DuctFlow', 'ChestXray', 'HypoxiaInO2'}, 2: {'DuctFlow', 'ChestXray', 'HypoxiaInO2', 'LVH'}, 3: {'DuctFlow', 'ChestXray', 'HypoxiaInO2', 'LVH'}}
+CO2Report: {1: {'CO2'}, 2: {'CO2'}}
+XrayReport: {1: {'Disease', 'ChestXray', 'Grunting'}, 2: {'Disease', 'ChestXray', 'LVH', 'Grunting'}, 3: {'Disease', 'ChestXray', 'Grunting'}, 4: {'Disease', 'Grunting', 'ChestXray', 'LVH'}, 5: {'Disease', 'ChestXray', 'LVH'}}
+Disease: {1: {'LungFlow', 'DuctFlow', 'ChestXray', 'CardiacMixing', 'Sick', 'LVH', 'Age'}, 2: {'LungFlow', 'DuctFlow', 'CardiacMixing', 'Sick', 'LungParench'}, 3: {'LungFlow', 'DuctFlow', 'ChestXray', 'CardiacMixing', 'LVH', 'Age'}, 4: {'LungFlow', 'CardiacMixing', 'DuctFlow', 'BirthAsphyxia', 'ChestXray', 'LVH', 'Age'}, 5: {'LungFlow', 'DuctFlow', 'CardiacMixing', 'Sick', 'LungParench', 'LVH'}, 6: {'LungFlow', 'DuctFlow', 'CardiacMixing', 'LungParench', 'LVH', 'Age'}}
+GruntingReport: {1: {'DuctFlow', 'Grunting'}, 2: {'Age', 'Grunting'}}
+Age: {1: {'Disease', 'LVHreport', 'Sick'}, 2: {'Disease', 'LVHreport', 'Sick'}, 3: {'Disease', 'Sick'}}
+LVH: {1: {'ChestXray', 'Disease', 'LVHreport'}, 2: {'ChestXray', 'Disease', 'LVHreport'}}
+DuctFlow: {1: {'HypDistrib', 'CardiacMixing', 'Disease'}, 2: {'HypDistrib', 'CardiacMixing', 'Disease'}, 3: {'HypDistrib', 'CardiacMixing', 'Disease', 'Sick'}}
+CardiacMixing: {1: {'HypDistrib', 'Disease', 'ChestXray', 'HypoxiaInO2'}, 2: {'HypDistrib', 'LungParench', 'Disease', 'HypoxiaInO2', 'XrayReport'}, 3: {'HypDistrib', 'LungParench', 'Disease', 'HypoxiaInO2'}, 4: {'ChestXray', 'Disease', 'HypoxiaInO2'}}
+LungParench: {1: {'CO2', 'ChestXray', 'Disease', 'HypoxiaInO2', 'Grunting'}, 2: {'Disease', 'CO2', 'ChestXray', 'HypoxiaInO2'}, 3: {'Disease', 'CO2', 'ChestXray', 'Grunting'}}
+LungFlow: {1: {'Disease', 'ChestXray', 'HypoxiaInO2'}, 2: {'Disease', 'ChestXray', 'HypoxiaInO2'}, 3: {'Disease', 'ChestXray'}}
+Sick: {1: {'CardiacMixing', 'Disease', 'Age', 'Grunting'}, 2: {'CardiacMixing', 'Disease', 'Age', 'Grunting'}}

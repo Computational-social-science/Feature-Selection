@@ -1,0 +1,272 @@
+{
+    "BirthAsphyxia": {
+        "yes": [],
+        "no": []
+    },
+    "HypDistrib": {
+        "Equal": [
+            "CardiacMixing",
+            "DuctFlow",
+            "HypoxiaInO2"
+        ],
+        "Unequal": [
+            "CardiacMixing",
+            "DuctFlow",
+            "HypoxiaInO2"
+        ]
+    },
+    "HypoxiaInO2": {
+        "Mild": [
+            "CardiacMixing",
+            "HypDistrib",
+            "LungParench"
+        ],
+        "Moderate": [
+            "CardiacMixing",
+            "HypDistrib",
+            "LungParench"
+        ],
+        "Severe": [
+            "CardiacMixing",
+            "HypDistrib",
+            "LungParench"
+        ]
+    },
+    "CO2": {
+        "Normal": [
+            "LungParench"
+        ],
+        "Low": [
+            "LungParench"
+        ],
+        "High": [
+            "LungParench"
+        ]
+    },
+    "ChestXray": {
+        "Normal": [
+            "LungParench",
+            "LungFlow"
+        ],
+        "Oligaemic": [
+            "LungParench",
+            "LungFlow"
+        ],
+        "Plethoric": [
+            "LungParench",
+            "LungFlow"
+        ],
+        "Grd_Glass": [
+            "LungParench",
+            "LungFlow"
+        ],
+        "Asy/Patch": [
+            "LungParench",
+            "LungFlow"
+        ]
+    },
+    "Grunting": {
+        "yes": [
+            "LungParench",
+            "Sick"
+        ],
+        "no": [
+            "LungParench",
+            "Sick"
+        ]
+    },
+    "LVHreport": {
+        "yes": [
+            "LVH"
+        ],
+        "no": [
+            "LVH"
+        ]
+    },
+    "LowerBodyO2": {
+        "<5": [
+            "HypDistrib",
+            "HypoxiaInO2"
+        ],
+        "5-12": [
+            "HypDistrib",
+            "HypoxiaInO2"
+        ],
+        "12+": [
+            "HypDistrib",
+            "HypoxiaInO2"
+        ]
+    },
+    "RUQO2": {
+        "<5": [
+            "HypoxiaInO2"
+        ],
+        "5-12": [
+            "HypoxiaInO2"
+        ],
+        "12+": [
+            "HypoxiaInO2"
+        ]
+    },
+    "CO2Report": {
+        "<7.5": [
+            "CO2"
+        ],
+        ">=7.5": [
+            "CO2"
+        ]
+    },
+    "XrayReport": {
+        "Normal": [
+            "ChestXray"
+        ],
+        "Oligaemic": [
+            "ChestXray"
+        ],
+        "Plethoric": [
+            "ChestXray"
+        ],
+        "Grd_Glass": [
+            "ChestXray"
+        ],
+        "Asy/Patchy": [
+            "ChestXray"
+        ]
+    },
+    "Disease": {
+        "PFC": [
+            "Sick",
+            "BirthAsphyxia"
+        ],
+        "TGA": [
+            "Sick",
+            "BirthAsphyxia"
+        ],
+        "Fallot": [
+            "Sick",
+            "BirthAsphyxia"
+        ],
+        "PAIVS": [
+            "Sick",
+            "BirthAsphyxia"
+        ],
+        "TAPVD": [
+            "Sick",
+            "BirthAsphyxia"
+        ],
+        "Lung": [
+            "Sick",
+            "BirthAsphyxia"
+        ]
+    },
+    "GruntingReport": {
+        "yes": [
+            "Grunting"
+        ],
+        "no": [
+            "Grunting"
+        ]
+    },
+    "Age": {
+        "0-3_days": [
+            "Disease",
+            "Sick"
+        ],
+        "4-10_days": [
+            "Disease",
+            "Sick"
+        ],
+        "11-30_days": [
+            "Disease",
+            "Sick"
+        ]
+    },
+    "LVH": {
+        "yes": [
+            "Disease"
+        ],
+        "no": [
+            "Disease"
+        ]
+    },
+    "DuctFlow": {
+        "Lt_to_Rt": [
+            "Disease",
+            "CardiacMixing"
+        ],
+        "None": [
+            "Disease",
+            "CardiacMixing"
+        ],
+        "Rt_to_Lt": [
+            "Disease",
+            "CardiacMixing"
+        ]
+    },
+    "CardiacMixing": {
+        "None": [
+            "Disease",
+            "LungParench",
+            "DuctFlow"
+        ],
+        "Mild": [
+            "Disease",
+            "LungParench",
+            "DuctFlow"
+        ],
+        "Complete": [
+            "Disease",
+            "LungParench",
+            "DuctFlow"
+        ],
+        "Transp.": [
+            "Disease",
+            "LungParench",
+            "DuctFlow"
+        ]
+    },
+    "LungParench": {
+        "Normal": [
+            "Disease",
+            "CardiacMixing",
+            "LungFlow",
+            "Sick"
+        ],
+        "Congested": [
+            "Disease",
+            "CardiacMixing",
+            "LungFlow",
+            "Sick"
+        ],
+        "Abnormal": [
+            "Disease",
+            "CardiacMixing",
+            "LungFlow",
+            "Sick"
+        ]
+    },
+    "LungFlow": {
+        "Normal": [
+            "Disease",
+            "LungParench"
+        ],
+        "Low": [
+            "Disease",
+            "LungParench"
+        ],
+        "High": [
+            "Disease",
+            "LungParench"
+        ]
+    },
+    "Sick": {
+        "yes": [
+            "Disease",
+            "LungParench"
+        ],
+        "no": [
+            "Disease",
+            "LungParench"
+        ]
+    }
+}

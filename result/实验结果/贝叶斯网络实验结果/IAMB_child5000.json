@@ -1,0 +1,86 @@
+{
+  "BirthAsphyxia": [
+    "Disease"
+  ],
+  "HypDistrib": [
+    "Disease",
+    "DuctFlow"
+  ],
+  "HypoxiaInO2": [
+    "RUQO2",
+    "CardiacMixing"
+  ],
+  "CO2": [
+    "Grunting",
+    "CO2Report"
+  ],
+  "ChestXray": [
+    "XrayReport",
+    "LungParench",
+    "LungFlow",
+    "Sick"
+  ],
+  "Grunting": [
+    "ChestXray",
+    "GruntingReport"
+  ],
+  "LVHreport": [
+    "LVH"
+  ],
+  "LowerBodyO2": [
+    "HypDistrib",
+    "HypoxiaInO2"
+  ],
+  "RUQO2": [
+    "HypoxiaInO2"
+  ],
+  "CO2Report": [
+    "CO2"
+  ],
+  "XrayReport": [
+    "ChestXray",
+    "Disease"
+  ],
+  "Disease": [
+    "LVH",
+    "DuctFlow"
+  ],
+  "GruntingReport": [
+    "Grunting"
+  ],
+  "Age": [
+    "Disease",
+    "LVH",
+    "DuctFlow"
+  ],
+  "LVH": [
+    "LVHreport",
+    "Disease",
+    "CardiacMixing"
+  ],
+  "DuctFlow": [
+    "HypDistrib",
+    "Disease",
+    "GruntingReport",
+    "LungFlow"
+  ],
+  "CardiacMixing": [
+    "HypDistrib",
+    "HypoxiaInO2",
+    "LungFlow"
+  ],
+  "LungParench": [
+    "ChestXray",
+    "Grunting",
+    "CO2Report",
+    "LungFlow"
+  ],
+  "LungFlow": [
+    "ChestXray",
+    "Disease"
+  ],
+  "Sick": [
+    "Age",
+    "CardiacMixing"
+  ]
+}

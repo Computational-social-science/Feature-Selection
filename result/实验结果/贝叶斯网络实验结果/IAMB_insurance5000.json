@@ -1,0 +1,134 @@
+{
+  "GoodStudent": [
+    "Age",
+    "SocioEcon"
+  ],
+  "Age": [
+    "GoodStudent",
+    "RiskAversion",
+    "SeniorTrain",
+    "DrivHist"
+  ],
+  "SocioEcon": [
+    "Antilock",
+    "HomeBase",
+    "AntiTheft"
+  ],
+  "RiskAversion": [
+    "DrivQuality",
+    "DrivingSkill",
+    "AntiTheft",
+    "DrivHist"
+  ],
+  "VehicleYear": [
+    "RuggedAuto",
+    "CarValue",
+    "Airbag"
+  ],
+  "ThisCarDam": [
+    "Accident",
+    "DrivQuality",
+    "ThisCarCost"
+  ],
+  "RuggedAuto": [
+    "VehicleYear",
+    "MakeModel",
+    "Cushioning"
+  ],
+  "Accident": [
+    "ThisCarDam",
+    "DrivQuality",
+    "OtherCarCost"
+  ],
+  "MakeModel": [
+    "RuggedAuto",
+    "Antilock",
+    "CarValue"
+  ],
+  "DrivQuality": [
+    "RiskAversion",
+    "DrivingSkill",
+    "ThisCarCost"
+  ],
+  "Mileage": [
+    "Accident",
+    "MakeModel",
+    "DrivQuality",
+    "CarValue",
+    "DrivHist"
+  ],
+  "Antilock": [
+    "SocioEcon",
+    "VehicleYear",
+    "MakeModel"
+  ],
+  "DrivingSkill": [
+    "RiskAversion",
+    "DrivQuality",
+    "DrivHist"
+  ],
+  "SeniorTrain": [
+    "Age",
+    "AntiTheft"
+  ],
+  "ThisCarCost": [
+    "ThisCarDam",
+    "CarValue",
+    "PropCost"
+  ],
+  "Theft": [
+    "ThisCarDam",
+    "ThisCarCost"
+  ],
+  "CarValue": [
+    "VehicleYear",
+    "MakeModel",
+    "Mileage",
+    "Antilock"
+  ],
+  "HomeBase": [
+    "SocioEcon",
+    "RiskAversion"
+  ],
+  "AntiTheft": [
+    "RiskAversion",
+    "SeniorTrain",
+    "HomeBase"
+  ],
+  "PropCost": [
+    "ThisCarCost",
+    "OtherCarCost"
+  ],
+  "OtherCarCost": [
+    "RuggedAuto",
+    "Accident",
+    "CarValue",
+    "PropCost"
+  ],
+  "OtherCar": [
+    "SocioEcon",
+    "Antilock"
+  ],
+  "MedCost": [
+    "ThisCarDam",
+    "ThisCarCost"
+  ],
+  "Cushioning": [
+    "VehicleYear",
+    "RuggedAuto"
+  ],
+  "Airbag": [
+    "SocioEcon",
+    "VehicleYear",
+    "MakeModel",
+    "CarValue"
+  ],
+  "ILiCost": [
+    "Accident",
+    "OtherCarCost"
+  ],
+  "DrivHist": [
+    "RiskAversion",
+    "DrivQuality"
+  ]
+}

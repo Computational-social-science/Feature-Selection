@@ -1,0 +1,168 @@
+{
+  "HISTORY": [
+    "LVEDVOLUME",
+    "LVFAILURE",
+    "CO"
+  ],
+  "CVP": [
+    "LVEDVOLUME"
+  ],
+  "PCWP": [
+    "HYPOVOLEMIA",
+    "LVEDVOLUME"
+  ],
+  "HYPOVOLEMIA": [
+    "LVEDVOLUME",
+    "STROKEVOLUME"
+  ],
+  "LVEDVOLUME": [
+    "CVP",
+    "HYPOVOLEMIA"
+  ],
+  "LVFAILURE": [
+    "HISTORY",
+    "LVEDVOLUME"
+  ],
+  "STROKEVOLUME": [
+    "LVEDVOLUME",
+    "HR",
+    "CO"
+  ],
+  "ERRLOWOUTPUT": [
+    "STROKEVOLUME",
+    "HRBP",
+    "HR",
+    "CO"
+  ],
+  "HRBP": [
+    "ERRLOWOUTPUT",
+    "CATECHOL",
+    "HR"
+  ],
+  "HREKG": [
+    "ERRCAUTER",
+    "HR"
+  ],
+  "ERRCAUTER": [
+    "HREKG",
+    "HRSAT",
+    "HR"
+  ],
+  "HRSAT": [
+    "HRBP",
+    "HREKG",
+    "ERRCAUTER"
+  ],
+  "INSUFFANESTH": [
+    "HREKG",
+    "PAP"
+  ],
+  "ANAPHYLAXIS": [
+    "HREKG",
+    "TPR"
+  ],
+  "TPR": [
+    "STROKEVOLUME",
+    "ARTCO2",
+    "HR",
+    "BP"
+  ],
+  "EXPCO2": [
+    "VENTLUNG",
+    "ARTCO2"
+  ],
+  "KINKEDTUBE": [
+    "PRESS",
+    "DISCONNECT"
+  ],
+  "MINVOL": [
+    "INTUBATION",
+    "VENTLUNG",
+    "ARTCO2"
+  ],
+  "FIO2": [
+    "SAO2",
+    "ARTCO2"
+  ],
+  "PVSAT": [
+    "SAO2",
+    "VENTALV",
+    "ARTCO2"
+  ],
+  "SAO2": [
+    "MINVOL",
+    "ARTCO2"
+  ],
+  "PAP": [
+    "INSUFFANESTH",
+    "PULMEMBOLUS"
+  ],
+  "PULMEMBOLUS": [
+    "PAP",
+    "SHUNT",
+    "CATECHOL"
+  ],
+  "SHUNT": [
+    "MINVOL",
+    "INTUBATION"
+  ],
+  "INTUBATION": [
+    "MINVOL",
+    "SHUNT"
+  ],
+  "PRESS": [
+    "INTUBATION",
+    "VENTMACH"
+  ],
+  "DISCONNECT": [
+    "VENTMACH",
+    "VENTTUBE"
+  ],
+  "MINVOLSET": [
+    "VENTMACH"
+  ],
+  "VENTMACH": [
+    "DISCONNECT",
+    "MINVOLSET",
+    "VENTTUBE"
+  ],
+  "VENTTUBE": [
+    "MINVOL",
+    "DISCONNECT",
+    "VENTMACH"
+  ],
+  "VENTLUNG": [
+    "INTUBATION",
+    "ARTCO2"
+  ],
+  "VENTALV": [
+    "MINVOL",
+    "ARTCO2"
+  ],
+  "ARTCO2": [
+    "EXPCO2",
+    "PVSAT",
+    "VENTALV"
+  ],
+  "CATECHOL": [
+    "SAO2",
+    "HR",
+    "BP"
+  ],
+  "HR": [
+    "HRBP",
+    "HREKG",
+    "CATECHOL",
+    "CO"
+  ],
+  "CO": [
+    "STROKEVOLUME",
+    "TPR",
+    "HR",
+    "BP"
+  ],
+  "BP": [
+    "TPR",
+    "CO"
+  ]
+}

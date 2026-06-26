@@ -1,0 +1,302 @@
+{
+  "alcoholism": [
+    "Steatosis"
+  ],
+  "vh_amn": [
+    "hbsag"
+  ],
+  "hepatotoxic": [
+    "ESR"
+  ],
+  "THepatitis": [
+    "alcoholism",
+    "albumin",
+    "anorexia",
+    "ast",
+    "alt",
+    "phosphatase",
+    "fatigue"
+  ],
+  "hospital": [
+    "injections"
+  ],
+  "surgery": [
+    "transfusion"
+  ],
+  "gallstones": [
+    "choledocholithotomy"
+  ],
+  "choledocholithotomy": [
+    "gallstones"
+  ],
+  "injections": [
+    "hospital"
+  ],
+  "transfusion": [
+    "surgery"
+  ],
+  "ChHepatitis": [
+    "fibrosis",
+    "hbeag"
+  ],
+  "sex": [
+    "PBC"
+  ],
+  "age": [
+    "Hyperbilirubinemia",
+    "carcinoma"
+  ],
+  "PBC": [
+    "ama",
+    "carcinoma"
+  ],
+  "fibrosis": [
+    "ChHepatitis",
+    "carcinoma",
+    "palms",
+    "irregular_liver",
+    "edge",
+    "spiders",
+    "inr"
+  ],
+  "diabetes": [
+    "obesity",
+    "joints"
+  ],
+  "obesity": [
+    "diabetes",
+    "palms",
+    "irregular_liver",
+    "Cirrhosis",
+    "Steatosis"
+  ],
+  "Steatosis": [
+    "Cirrhosis",
+    "edge"
+  ],
+  "Cirrhosis": [
+    "Steatosis",
+    "carcinoma",
+    "palms",
+    "irregular_liver",
+    "edge",
+    "albumin",
+    "spiders",
+    "spleen",
+    "hbsag",
+    "cholesterol",
+    "alcohol",
+    "platelet",
+    "fibrosis",
+    "vh_amn",
+    "inr"
+  ],
+  "Hyperbilirubinemia": [
+    "age"
+  ],
+  "triglycerides": [
+    "Steatosis",
+    "spiders"
+  ],
+  "RHepatitis": [
+    "phosphatase",
+    "anorexia"
+  ],
+  "fatigue": [
+    "THepatitis"
+  ],
+  "bilirubin": [
+    "skin",
+    "carcinoma",
+    "edge",
+    "jaundice",
+    "cholesterol",
+    "ggtp",
+    "ESR"
+  ],
+  "itching": [
+    "bilirubin"
+  ],
+  "upper_pain": [
+    "Cirrhosis"
+  ],
+  "fat": [
+    "gallstones",
+    "hbeag"
+  ],
+  "pain_ruq": [
+    "Hyperbilirubinemia",
+    "spiders",
+    "nausea",
+    "itching"
+  ],
+  "pressure_ruq": [
+    "PBC"
+  ],
+  "phosphatase": [
+    "ChHepatitis"
+  ],
+  "skin": [
+    "bilirubin"
+  ],
+  "ama": [
+    "PBC"
+  ],
+  "le_cells": [
+    "PBC",
+    "cholesterol",
+    "bilirubin"
+  ],
+  "joints": [
+    "pain"
+  ],
+  "pain": [
+    "joints"
+  ],
+  "proteins": [
+    "ascites"
+  ],
+  "edema": [
+    "Cirrhosis",
+    "carcinoma",
+    "cholesterol"
+  ],
+  "platelet": [
+    "PBC",
+    "carcinoma",
+    "irregular_liver",
+    "consciousness"
+  ],
+  "inr": [
+    "Cirrhosis"
+  ],
+  "bleeding": [
+    "inr"
+  ],
+  "flatulence": [
+    "upper_pain"
+  ],
+  "alcohol": [
+    "Cirrhosis",
+    "edge"
+  ],
+  "encephalopathy": [
+    "density",
+    "carcinoma"
+  ],
+  "urea": [
+    "encephalopathy"
+  ],
+  "ascites": [
+    "proteins"
+  ],
+  "hepatomegaly": [
+    "hepatalgia"
+  ],
+  "hepatalgia": [
+    "hepatomegaly"
+  ],
+  "density": [
+    "encephalopathy"
+  ],
+  "ESR": [
+    "PBC",
+    "palms",
+    "hbsag",
+    "encephalopathy"
+  ],
+  "alt": [
+    "ChHepatitis"
+  ],
+  "ast": [
+    "ChHepatitis"
+  ],
+  "amylase": [
+    "gallstones"
+  ],
+  "ggtp": [
+    "PBC",
+    "palms"
+  ],
+  "cholesterol": [
+    "PBC",
+    "carcinoma"
+  ],
+  "hbsag": [
+    "ChHepatitis",
+    "hbc_anti",
+    "spleen",
+    "ast"
+  ],
+  "hbsag_anti": [
+    "triglycerides",
+    "bleeding"
+  ],
+  "anorexia": [
+    "RHepatitis",
+    "spiders",
+    "joints",
+    "Hyperbilirubinemia",
+    "age",
+    "hospital"
+  ],
+  "nausea": [
+    "inr"
+  ],
+  "spleen": [
+    "Cirrhosis"
+  ],
+  "consciousness": [
+    "encephalopathy"
+  ],
+  "spiders": [
+    "Cirrhosis",
+    "albumin",
+    "anorexia",
+    "alt"
+  ],
+  "jaundice": [
+    "bilirubin"
+  ],
+  "albumin": [
+    "Cirrhosis",
+    "spiders"
+  ],
+  "edge": [
+    "Cirrhosis",
+    "carcinoma",
+    "hcv_anti"
+  ],
+  "irregular_liver": [
+    "Cirrhosis"
+  ],
+  "hbc_anti": [
+    "vh_amn"
+  ],
+  "hcv_anti": [
+    "edge",
+    "inr",
+    "sex"
+  ],
+  "palms": [
+    "Cirrhosis",
+    "nausea"
+  ],
+  "hbeag": [
+    "ChHepatitis",
+    "fat"
+  ],
+  "carcinoma": [
+    "Cirrhosis",
+    "edge",
+    "cholesterol",
+    "ggtp",
+    "ESR",
+    "ama",
+    "bilirubin",
+    "PBC",
+    "age",
+    "inr",
+    "platelet"
+  ]
+}

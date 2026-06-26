@@ -1,0 +1,949 @@
+{
+    "alcoholism": {
+        "present": [
+            "hepatotoxic",
+            "obesity"
+        ],
+        "absent": [
+            "hepatotoxic",
+            "obesity"
+        ]
+    },
+    "vh_amn": {
+        "present": [
+            "injections",
+            "transfusion",
+            "hbsag",
+            "ChHepatitis"
+        ],
+        "absent": [
+            "injections",
+            "transfusion",
+            "hbsag",
+            "ChHepatitis"
+        ]
+    },
+    "hepatotoxic": {
+        "present": [
+            "alcoholism"
+        ],
+        "absent": [
+            "alcoholism"
+        ]
+    },
+    "THepatitis": {
+        "present": [
+            "hepatotoxic",
+            "PBC",
+            "Hyperbilirubinemia",
+            "alcoholism",
+            "RHepatitis",
+            "Steatosis",
+            "Cirrhosis",
+            "ChHepatitis"
+        ],
+        "absent": [
+            "hepatotoxic",
+            "PBC",
+            "Hyperbilirubinemia",
+            "alcoholism",
+            "RHepatitis",
+            "Steatosis",
+            "Cirrhosis",
+            "ChHepatitis"
+        ]
+    },
+    "hospital": {
+        "present": [
+            "surgery",
+            "choledocholithotomy"
+        ],
+        "absent": [
+            "surgery",
+            "choledocholithotomy"
+        ]
+    },
+    "surgery": {
+        "present": [
+            "hospital",
+            "choledocholithotomy"
+        ],
+        "absent": [
+            "hospital",
+            "choledocholithotomy"
+        ]
+    },
+    "gallstones": {
+        "present": [
+            "Hyperbilirubinemia",
+            "PBC",
+            "Cirrhosis",
+            "ChHepatitis"
+        ],
+        "absent": [
+            "Hyperbilirubinemia",
+            "PBC",
+            "Cirrhosis",
+            "ChHepatitis"
+        ]
+    },
+    "choledocholithotomy": {
+        "present": [
+            "surgery",
+            "hospital",
+            "gallstones"
+        ],
+        "absent": [
+            "surgery",
+            "hospital",
+            "gallstones"
+        ]
+    },
+    "injections": {
+        "present": [
+            "transfusion",
+            "surgery",
+            "hospital",
+            "choledocholithotomy",
+            "vh_amn"
+        ],
+        "absent": [
+            "transfusion",
+            "surgery",
+            "hospital",
+            "choledocholithotomy",
+            "vh_amn"
+        ]
+    },
+    "transfusion": {
+        "present": [
+            "injections",
+            "surgery",
+            "hospital",
+            "choledocholithotomy",
+            "vh_amn"
+        ],
+        "absent": [
+            "injections",
+            "surgery",
+            "hospital",
+            "choledocholithotomy",
+            "vh_amn"
+        ]
+    },
+    "ChHepatitis": {
+        "active": [
+            "injections",
+            "THepatitis",
+            "gallstones",
+            "PBC",
+            "hbsag",
+            "Cirrhosis",
+            "Hyperbilirubinemia",
+            "transfusion",
+            "RHepatitis",
+            "Steatosis",
+            "vh_amn"
+        ],
+        "persistent": [
+            "injections",
+            "THepatitis",
+            "gallstones",
+            "PBC",
+            "hbsag",
+            "Cirrhosis",
+            "Hyperbilirubinemia",
+            "transfusion",
+            "RHepatitis",
+            "Steatosis",
+            "vh_amn"
+        ],
+        "absent": [
+            "injections",
+            "THepatitis",
+            "gallstones",
+            "PBC",
+            "hbsag",
+            "Cirrhosis",
+            "Hyperbilirubinemia",
+            "transfusion",
+            "RHepatitis",
+            "Steatosis",
+            "vh_amn"
+        ]
+    },
+    "sex": {
+        "female": [
+            "age"
+        ],
+        "male": [
+            "age"
+        ]
+    },
+    "age": {
+        "age65_100": [
+            "sex"
+        ],
+        "age51_65": [
+            "sex"
+        ],
+        "age31_50": [
+            "sex"
+        ],
+        "age0_30": [
+            "sex"
+        ]
+    },
+    "PBC": {
+        "present": [
+            "THepatitis",
+            "gallstones",
+            "sex",
+            "Hyperbilirubinemia",
+            "joints",
+            "age",
+            "RHepatitis",
+            "Steatosis",
+            "Cirrhosis",
+            "ChHepatitis"
+        ],
+        "absent": [
+            "THepatitis",
+            "gallstones",
+            "sex",
+            "Hyperbilirubinemia",
+            "joints",
+            "age",
+            "RHepatitis",
+            "Steatosis",
+            "Cirrhosis",
+            "ChHepatitis"
+        ]
+    },
+    "fibrosis": {
+        "present": [
+            "Steatosis",
+            "ChHepatitis"
+        ],
+        "absent": [
+            "Steatosis",
+            "ChHepatitis"
+        ]
+    },
+    "diabetes": {
+        "present": [],
+        "absent": []
+    },
+    "obesity": {
+        "present": [
+            "diabetes",
+            "alcoholism"
+        ],
+        "absent": [
+            "diabetes",
+            "alcoholism"
+        ]
+    },
+    "Steatosis": {
+        "present": [
+            "Hyperbilirubinemia",
+            "PBC",
+            "RHepatitis",
+            "THepatitis",
+            "fibrosis",
+            "alcoholism",
+            "ChHepatitis",
+            "Cirrhosis",
+            "obesity"
+        ],
+        "absent": [
+            "Hyperbilirubinemia",
+            "PBC",
+            "RHepatitis",
+            "THepatitis",
+            "fibrosis",
+            "alcoholism",
+            "ChHepatitis",
+            "Cirrhosis",
+            "obesity"
+        ]
+    },
+    "Cirrhosis": {
+        "decompensate": [
+            "THepatitis",
+            "fibrosis",
+            "gallstones",
+            "PBC",
+            "Hyperbilirubinemia",
+            "RHepatitis",
+            "Steatosis",
+            "ChHepatitis"
+        ],
+        "compensate": [
+            "THepatitis",
+            "fibrosis",
+            "gallstones",
+            "PBC",
+            "Hyperbilirubinemia",
+            "RHepatitis",
+            "Steatosis",
+            "ChHepatitis"
+        ],
+        "absent": [
+            "THepatitis",
+            "fibrosis",
+            "gallstones",
+            "PBC",
+            "Hyperbilirubinemia",
+            "RHepatitis",
+            "Steatosis",
+            "ChHepatitis"
+        ]
+    },
+    "Hyperbilirubinemia": {
+        "present": [
+            "PBC",
+            "RHepatitis",
+            "THepatitis",
+            "sex",
+            "Steatosis",
+            "gallstones",
+            "Cirrhosis",
+            "age",
+            "ChHepatitis"
+        ],
+        "absent": [
+            "PBC",
+            "RHepatitis",
+            "THepatitis",
+            "sex",
+            "Steatosis",
+            "gallstones",
+            "Cirrhosis",
+            "age",
+            "ChHepatitis"
+        ]
+    },
+    "triglycerides": {
+        "a17_4": [
+            "Steatosis"
+        ],
+        "a3_2": [
+            "Steatosis"
+        ],
+        "a1_0": [
+            "Steatosis"
+        ]
+    },
+    "RHepatitis": {
+        "present": [
+            "Hyperbilirubinemia",
+            "PBC",
+            "THepatitis",
+            "Cirrhosis",
+            "Steatosis",
+            "hepatotoxic",
+            "ChHepatitis"
+        ],
+        "absent": [
+            "Hyperbilirubinemia",
+            "PBC",
+            "THepatitis",
+            "Cirrhosis",
+            "Steatosis",
+            "hepatotoxic",
+            "ChHepatitis"
+        ]
+    },
+    "fatigue": {
+        "present": [
+            "RHepatitis",
+            "ChHepatitis",
+            "THepatitis"
+        ],
+        "absent": [
+            "RHepatitis",
+            "ChHepatitis",
+            "THepatitis"
+        ]
+    },
+    "bilirubin": {
+        "a88_20": [
+            "Hyperbilirubinemia",
+            "PBC",
+            "Cirrhosis",
+            "gallstones",
+            "ChHepatitis"
+        ],
+        "a19_7": [
+            "Hyperbilirubinemia",
+            "PBC",
+            "Cirrhosis",
+            "gallstones",
+            "ChHepatitis"
+        ],
+        "a6_2": [
+            "Hyperbilirubinemia",
+            "PBC",
+            "Cirrhosis",
+            "gallstones",
+            "ChHepatitis"
+        ],
+        "a1_0": [
+            "Hyperbilirubinemia",
+            "PBC",
+            "Cirrhosis",
+            "gallstones",
+            "ChHepatitis"
+        ]
+    },
+    "itching": {
+        "present": [
+            "bilirubin"
+        ],
+        "absent": [
+            "bilirubin"
+        ]
+    },
+    "upper_pain": {
+        "present": [
+            "gallstones"
+        ],
+        "absent": [
+            "gallstones"
+        ]
+    },
+    "fat": {
+        "present": [
+            "gallstones"
+        ],
+        "absent": [
+            "gallstones"
+        ]
+    },
+    "pain_ruq": {
+        "present": [
+            "Steatosis",
+            "Hyperbilirubinemia"
+        ],
+        "absent": [
+            "Steatosis",
+            "Hyperbilirubinemia"
+        ]
+    },
+    "pressure_ruq": {
+        "present": [
+            "gallstones",
+            "PBC",
+            "ChHepatitis"
+        ],
+        "absent": [
+            "gallstones",
+            "PBC",
+            "ChHepatitis"
+        ]
+    },
+    "phosphatase": {
+        "a4000_700": [
+            "Cirrhosis",
+            "RHepatitis",
+            "ChHepatitis",
+            "THepatitis"
+        ],
+        "a699_240": [
+            "Cirrhosis",
+            "RHepatitis",
+            "ChHepatitis",
+            "THepatitis"
+        ],
+        "a239_0": [
+            "Cirrhosis",
+            "RHepatitis",
+            "ChHepatitis",
+            "THepatitis"
+        ]
+    },
+    "skin": {
+        "present": [
+            "bilirubin"
+        ],
+        "absent": [
+            "bilirubin"
+        ]
+    },
+    "ama": {
+        "present": [
+            "PBC"
+        ],
+        "absent": [
+            "PBC"
+        ]
+    },
+    "le_cells": {
+        "present": [
+            "PBC"
+        ],
+        "absent": [
+            "PBC"
+        ]
+    },
+    "joints": {
+        "present": [
+            "PBC"
+        ],
+        "absent": [
+            "PBC"
+        ]
+    },
+    "pain": {
+        "present": [
+            "joints",
+            "PBC"
+        ],
+        "absent": [
+            "joints",
+            "PBC"
+        ]
+    },
+    "proteins": {
+        "a10_6": [
+            "Cirrhosis"
+        ],
+        "a5_2": [
+            "Cirrhosis"
+        ]
+    },
+    "edema": {
+        "present": [
+            "Cirrhosis"
+        ],
+        "absent": [
+            "Cirrhosis"
+        ]
+    },
+    "platelet": {
+        "a597_300": [
+            "PBC",
+            "inr",
+            "Cirrhosis"
+        ],
+        "a299_150": [
+            "PBC",
+            "inr",
+            "Cirrhosis"
+        ],
+        "a149_100": [
+            "PBC",
+            "inr",
+            "Cirrhosis"
+        ],
+        "a99_0": [
+            "PBC",
+            "inr",
+            "Cirrhosis"
+        ]
+    },
+    "inr": {
+        "a200_110": [
+            "Hyperbilirubinemia",
+            "THepatitis",
+            "platelet",
+            "Cirrhosis",
+            "ChHepatitis"
+        ],
+        "a109_70": [
+            "Hyperbilirubinemia",
+            "THepatitis",
+            "platelet",
+            "Cirrhosis",
+            "ChHepatitis"
+        ],
+        "a69_0": [
+            "Hyperbilirubinemia",
+            "THepatitis",
+            "platelet",
+            "Cirrhosis",
+            "ChHepatitis"
+        ]
+    },
+    "bleeding": {
+        "present": [
+            "inr",
+            "platelet"
+        ],
+        "absent": [
+            "inr",
+            "platelet"
+        ]
+    },
+    "flatulence": {
+        "present": [
+            "gallstones"
+        ],
+        "absent": [
+            "gallstones"
+        ]
+    },
+    "alcohol": {
+        "present": [
+            "Cirrhosis"
+        ],
+        "absent": [
+            "Cirrhosis"
+        ]
+    },
+    "encephalopathy": {
+        "present": [
+            "PBC",
+            "Cirrhosis"
+        ],
+        "absent": [
+            "PBC",
+            "Cirrhosis"
+        ]
+    },
+    "urea": {
+        "a165_50": [
+            "encephalopathy"
+        ],
+        "a49_40": [
+            "encephalopathy"
+        ],
+        "a39_0": [
+            "encephalopathy"
+        ]
+    },
+    "ascites": {
+        "present": [
+            "proteins"
+        ],
+        "absent": [
+            "proteins"
+        ]
+    },
+    "hepatomegaly": {
+        "present": [
+            "Hyperbilirubinemia",
+            "RHepatitis",
+            "THepatitis",
+            "Steatosis"
+        ],
+        "absent": [
+            "Hyperbilirubinemia",
+            "RHepatitis",
+            "THepatitis",
+            "Steatosis"
+        ]
+    },
+    "hepatalgia": {
+        "present": [
+            "hepatomegaly"
+        ],
+        "absent": [
+            "hepatomegaly"
+        ]
+    },
+    "density": {
+        "present": [
+            "encephalopathy"
+        ],
+        "absent": [
+            "encephalopathy"
+        ]
+    },
+    "ESR": {
+        "a200_50": [
+            "Steatosis",
+            "PBC",
+            "Hyperbilirubinemia",
+            "ChHepatitis"
+        ],
+        "a49_15": [
+            "Steatosis",
+            "PBC",
+            "Hyperbilirubinemia",
+            "ChHepatitis"
+        ],
+        "a14_0": [
+            "Steatosis",
+            "PBC",
+            "Hyperbilirubinemia",
+            "ChHepatitis"
+        ]
+    },
+    "alt": {
+        "a850_200": [
+            "RHepatitis",
+            "THepatitis",
+            "Steatosis",
+            "Cirrhosis",
+            "ChHepatitis"
+        ],
+        "a199_100": [
+            "RHepatitis",
+            "THepatitis",
+            "Steatosis",
+            "Cirrhosis",
+            "ChHepatitis"
+        ],
+        "a99_35": [
+            "RHepatitis",
+            "THepatitis",
+            "Steatosis",
+            "Cirrhosis",
+            "ChHepatitis"
+        ],
+        "a34_0": [
+            "RHepatitis",
+            "THepatitis",
+            "Steatosis",
+            "Cirrhosis",
+            "ChHepatitis"
+        ]
+    },
+    "ast": {
+        "a700_400": [
+            "RHepatitis",
+            "THepatitis",
+            "Steatosis",
+            "Cirrhosis",
+            "ChHepatitis"
+        ],
+        "a399_150": [
+            "RHepatitis",
+            "THepatitis",
+            "Steatosis",
+            "Cirrhosis",
+            "ChHepatitis"
+        ],
+        "a149_40": [
+            "RHepatitis",
+            "THepatitis",
+            "Steatosis",
+            "Cirrhosis",
+            "ChHepatitis"
+        ],
+        "a39_0": [
+            "RHepatitis",
+            "THepatitis",
+            "Steatosis",
+            "Cirrhosis",
+            "ChHepatitis"
+        ]
+    },
+    "amylase": {
+        "a1400_500": [
+            "gallstones"
+        ],
+        "a499_300": [
+            "gallstones"
+        ],
+        "a299_0": [
+            "gallstones"
+        ]
+    },
+    "ggtp": {
+        "a640_70": [
+            "Hyperbilirubinemia",
+            "PBC",
+            "RHepatitis",
+            "THepatitis",
+            "Steatosis",
+            "ChHepatitis"
+        ],
+        "a69_30": [
+            "Hyperbilirubinemia",
+            "PBC",
+            "RHepatitis",
+            "THepatitis",
+            "Steatosis",
+            "ChHepatitis"
+        ],
+        "a29_10": [
+            "Hyperbilirubinemia",
+            "PBC",
+            "RHepatitis",
+            "THepatitis",
+            "Steatosis",
+            "ChHepatitis"
+        ],
+        "a9_0": [
+            "Hyperbilirubinemia",
+            "PBC",
+            "RHepatitis",
+            "THepatitis",
+            "Steatosis",
+            "ChHepatitis"
+        ]
+    },
+    "cholesterol": {
+        "a999_350": [
+            "Steatosis",
+            "PBC",
+            "ChHepatitis"
+        ],
+        "a349_240": [
+            "Steatosis",
+            "PBC",
+            "ChHepatitis"
+        ],
+        "a239_0": [
+            "Steatosis",
+            "PBC",
+            "ChHepatitis"
+        ]
+    },
+    "hbsag": {
+        "present": [
+            "ChHepatitis",
+            "vh_amn"
+        ],
+        "absent": [
+            "ChHepatitis",
+            "vh_amn"
+        ]
+    },
+    "hbsag_anti": {
+        "present": [
+            "hbsag",
+            "ChHepatitis",
+            "vh_amn"
+        ],
+        "absent": [
+            "hbsag",
+            "ChHepatitis",
+            "vh_amn"
+        ]
+    },
+    "anorexia": {
+        "present": [
+            "RHepatitis",
+            "THepatitis"
+        ],
+        "absent": [
+            "RHepatitis",
+            "THepatitis"
+        ]
+    },
+    "nausea": {
+        "present": [
+            "RHepatitis",
+            "THepatitis"
+        ],
+        "absent": [
+            "RHepatitis",
+            "THepatitis"
+        ]
+    },
+    "spleen": {
+        "present": [
+            "Cirrhosis",
+            "RHepatitis",
+            "THepatitis"
+        ],
+        "absent": [
+            "Cirrhosis",
+            "RHepatitis",
+            "THepatitis"
+        ]
+    },
+    "consciousness": {
+        "present": [
+            "encephalopathy"
+        ],
+        "absent": [
+            "encephalopathy"
+        ]
+    },
+    "spiders": {
+        "present": [
+            "Cirrhosis"
+        ],
+        "absent": [
+            "Cirrhosis"
+        ]
+    },
+    "jaundice": {
+        "present": [
+            "bilirubin"
+        ],
+        "absent": [
+            "bilirubin"
+        ]
+    },
+    "albumin": {
+        "a70_50": [
+            "Cirrhosis"
+        ],
+        "a49_30": [
+            "Cirrhosis"
+        ],
+        "a29_0": [
+            "Cirrhosis"
+        ]
+    },
+    "edge": {
+        "present": [
+            "Cirrhosis"
+        ],
+        "absent": [
+            "Cirrhosis"
+        ]
+    },
+    "irregular_liver": {
+        "present": [
+            "Cirrhosis"
+        ],
+        "absent": [
+            "Cirrhosis"
+        ]
+    },
+    "hbc_anti": {
+        "present": [
+            "ChHepatitis",
+            "vh_amn"
+        ],
+        "absent": [
+            "ChHepatitis",
+            "vh_amn"
+        ]
+    },
+    "hcv_anti": {
+        "present": [
+            "ChHepatitis",
+            "vh_amn"
+        ],
+        "absent": [
+            "ChHepatitis",
+            "vh_amn"
+        ]
+    },
+    "palms": {
+        "present": [
+            "Cirrhosis"
+        ],
+        "absent": [
+            "Cirrhosis"
+        ]
+    },
+    "hbeag": {
+        "present": [
+            "ChHepatitis",
+            "vh_amn"
+        ],
+        "absent": [
+            "ChHepatitis",
+            "vh_amn"
+        ]
+    },
+    "carcinoma": {
+        "present": [
+            "Cirrhosis",
+            "PBC"
+        ],
+        "absent": [
+            "Cirrhosis",
+            "PBC"
+        ]
+    }
+}

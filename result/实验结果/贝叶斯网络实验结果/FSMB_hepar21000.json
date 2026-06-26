@@ -1,0 +1,308 @@
+{
+  "alcoholism": [
+    "Steatosis",
+    "THepatitis",
+    "ggtp"
+  ],
+  "vh_amn": [
+    "ChHepatitis",
+    "sex",
+    "hbsag",
+    "hbsag_anti"
+  ],
+  "hepatotoxic": [
+    "urea",
+    "bilirubin"
+  ],
+  "THepatitis": [
+    "alcoholism",
+    "alt",
+    "ast"
+  ],
+  "hospital": [
+    "injections"
+  ],
+  "surgery": [
+    "injections",
+    "transfusion",
+    "cholesterol"
+  ],
+  "gallstones": [
+    "bilirubin",
+    "choledocholithotomy"
+  ],
+  "choledocholithotomy": [
+    "triglycerides",
+    "gallstones"
+  ],
+  "injections": [
+    "ChHepatitis",
+    "hospital",
+    "surgery",
+    "gallstones"
+  ],
+  "transfusion": [
+    "surgery",
+    "cholesterol"
+  ],
+  "ChHepatitis": [
+    "vh_amn",
+    "hbsag",
+    "injections",
+    "phosphatase",
+    "fibrosis"
+  ],
+  "sex": [
+    "anorexia",
+    "PBC",
+    "jaundice"
+  ],
+  "age": [
+    "Hyperbilirubinemia",
+    "PBC"
+  ],
+  "PBC": [
+    "ESR",
+    "ggtp",
+    "cholesterol",
+    "bilirubin",
+    "age",
+    "ama"
+  ],
+  "fibrosis": [
+    "Cirrhosis",
+    "ChHepatitis",
+    "sex"
+  ],
+  "diabetes": [
+    "ggtp"
+  ],
+  "obesity": [
+    "Cirrhosis",
+    "spleen"
+  ],
+  "Steatosis": [
+    "Cirrhosis",
+    "ast",
+    "triglycerides"
+  ],
+  "Cirrhosis": [
+    "Steatosis",
+    "spleen",
+    "spiders",
+    "fibrosis",
+    "edge"
+  ],
+  "Hyperbilirubinemia": [
+    "age",
+    "hepatomegaly",
+    "bilirubin"
+  ],
+  "triglycerides": [
+    "alcoholism",
+    "Steatosis"
+  ],
+  "RHepatitis": [
+    "ast",
+    "phosphatase"
+  ],
+  "fatigue": [
+    "alcohol",
+    "transfusion"
+  ],
+  "bilirubin": [
+    "itching",
+    "jaundice",
+    "PBC",
+    "skin"
+  ],
+  "itching": [
+    "skin",
+    "bilirubin"
+  ],
+  "upper_pain": [
+    "amylase",
+    "bleeding"
+  ],
+  "fat": [
+    "albumin",
+    "hbc_anti",
+    "gallstones"
+  ],
+  "pain_ruq": [
+    "joints",
+    "Hyperbilirubinemia"
+  ],
+  "pressure_ruq": [
+    "ChHepatitis",
+    "urea",
+    "PBC"
+  ],
+  "phosphatase": [
+    "alcohol",
+    "Cirrhosis",
+    "ChHepatitis",
+    "RHepatitis"
+  ],
+  "skin": [
+    "itching",
+    "bilirubin"
+  ],
+  "ama": [
+    "age",
+    "PBC"
+  ],
+  "le_cells": [
+    "PBC"
+  ],
+  "joints": [
+    "pain",
+    "PBC"
+  ],
+  "pain": [
+    "joints",
+    "PBC"
+  ],
+  "proteins": [
+    "ascites"
+  ],
+  "edema": [
+    "injections",
+    "Cirrhosis"
+  ],
+  "platelet": [
+    "ggtp",
+    "PBC",
+    "spiders",
+    "bleeding"
+  ],
+  "inr": [
+    "flatulence",
+    "Cirrhosis",
+    "anorexia",
+    "bleeding"
+  ],
+  "bleeding": [
+    "upper_pain",
+    "platelet",
+    "inr"
+  ],
+  "flatulence": [
+    "nausea"
+  ],
+  "alcohol": [
+    "phosphatase",
+    "fatigue"
+  ],
+  "encephalopathy": [
+    "consciousness",
+    "PBC"
+  ],
+  "urea": [
+    "encephalopathy",
+    "palms",
+    "pressure_ruq"
+  ],
+  "ascites": [
+    "ESR",
+    "proteins"
+  ],
+  "hepatomegaly": [
+    "Hyperbilirubinemia",
+    "hepatalgia"
+  ],
+  "hepatalgia": [
+    "fat",
+    "hepatomegaly"
+  ],
+  "density": [
+    "encephalopathy"
+  ],
+  "ESR": [
+    "ChHepatitis",
+    "spiders",
+    "PBC"
+  ],
+  "alt": [
+    "ChHepatitis",
+    "THepatitis"
+  ],
+  "ast": [
+    "Steatosis",
+    "ChHepatitis",
+    "THepatitis"
+  ],
+  "amylase": [
+    "upper_pain",
+    "gallstones"
+  ],
+  "ggtp": [
+    "alcoholism",
+    "PBC",
+    "Hyperbilirubinemia",
+    "platelet"
+  ],
+  "cholesterol": [
+    "surgery",
+    "PBC"
+  ],
+  "hbsag": [
+    "vh_amn",
+    "ChHepatitis"
+  ],
+  "hbsag_anti": [
+    "vh_amn"
+  ],
+  "anorexia": [
+    "ggtp",
+    "inr"
+  ],
+  "nausea": [
+    "ESR",
+    "amylase",
+    "platelet"
+  ],
+  "spleen": [
+    "ESR",
+    "Cirrhosis"
+  ],
+  "consciousness": [
+    "encephalopathy"
+  ],
+  "spiders": [
+    "ESR",
+    "Cirrhosis",
+    "cholesterol",
+    "platelet"
+  ],
+  "jaundice": [
+    "sex",
+    "albumin",
+    "bilirubin"
+  ],
+  "albumin": [
+    "vh_amn",
+    "Cirrhosis",
+    "fat"
+  ],
+  "edge": [
+    "Cirrhosis"
+  ],
+  "irregular_liver": [
+    "Cirrhosis",
+    "THepatitis"
+  ],
+  "hbc_anti": [
+    "fat"
+  ],
+  "hcv_anti": [],
+  "palms": [
+    "Cirrhosis",
+    "urea"
+  ],
+  "hbeag": [],
+  "carcinoma": [
+    "Cirrhosis",
+    "PBC"
+  ]
+}

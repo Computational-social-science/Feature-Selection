@@ -1,0 +1,167 @@
+{
+  "HISTORY": [
+    "CO",
+    "LVFAILURE"
+  ],
+  "CVP": [
+    "HYPOVOLEMIA",
+    "LVEDVOLUME"
+  ],
+  "PCWP": [
+    "HYPOVOLEMIA",
+    "LVEDVOLUME"
+  ],
+  "HYPOVOLEMIA": [
+    "CVP",
+    "LVEDVOLUME",
+    "STROKEVOLUME"
+  ],
+  "LVEDVOLUME": [
+    "CVP",
+    "PCWP",
+    "HYPOVOLEMIA",
+    "LVFAILURE"
+  ],
+  "LVFAILURE": [
+    "HISTORY",
+    "LVEDVOLUME",
+    "STROKEVOLUME"
+  ],
+  "STROKEVOLUME": [
+    "CO",
+    "HYPOVOLEMIA",
+    "LVFAILURE"
+  ],
+  "ERRLOWOUTPUT": [
+    "HRBP",
+    "CO"
+  ],
+  "HRBP": [
+    "HR",
+    "ERRLOWOUTPUT"
+  ],
+  "HREKG": [
+    "HR",
+    "ERRCAUTER"
+  ],
+  "ERRCAUTER": [
+    "HREKG",
+    "HRSAT"
+  ],
+  "HRSAT": [
+    "HR",
+    "ERRCAUTER"
+  ],
+  "INSUFFANESTH": [
+    "SAO2",
+    "PAP"
+  ],
+  "ANAPHYLAXIS": [
+    "TPR"
+  ],
+  "TPR": [
+    "CATECHOL",
+    "BP",
+    "MINVOL"
+  ],
+  "EXPCO2": [
+    "ARTCO2",
+    "VENTLUNG"
+  ],
+  "KINKEDTUBE": [
+    "PRESS",
+    "VENTLUNG"
+  ],
+  "MINVOL": [
+    "INTUBATION",
+    "VENTTUBE",
+    "VENTLUNG"
+  ],
+  "FIO2": [
+    "PVSAT"
+  ],
+  "PVSAT": [
+    "SAO2",
+    "VENTALV"
+  ],
+  "SAO2": [
+    "PVSAT",
+    "VENTALV"
+  ],
+  "PAP": [
+    "INTUBATION",
+    "INSUFFANESTH",
+    "PULMEMBOLUS"
+  ],
+  "PULMEMBOLUS": [
+    "PAP",
+    "SHUNT"
+  ],
+  "SHUNT": [
+    "INTUBATION",
+    "SAO2",
+    "PULMEMBOLUS"
+  ],
+  "INTUBATION": [
+    "MINVOL",
+    "VENTLUNG",
+    "VENTALV"
+  ],
+  "PRESS": [
+    "INTUBATION",
+    "VENTTUBE"
+  ],
+  "DISCONNECT": [
+    "VENTTUBE"
+  ],
+  "MINVOLSET": [
+    "VENTMACH"
+  ],
+  "VENTMACH": [
+    "MINVOLSET",
+    "SAO2",
+    "VENTTUBE"
+  ],
+  "VENTTUBE": [
+    "PRESS",
+    "DISCONNECT",
+    "VENTMACH",
+    "VENTLUNG",
+    "VENTALV"
+  ],
+  "VENTLUNG": [
+    "MINVOL",
+    "EXPCO2",
+    "VENTALV"
+  ],
+  "VENTALV": [
+    "ARTCO2",
+    "INTUBATION",
+    "PVSAT",
+    "VENTLUNG"
+  ],
+  "ARTCO2": [
+    "EXPCO2",
+    "VENTALV"
+  ],
+  "CATECHOL": [
+    "ARTCO2",
+    "HR",
+    "TPR"
+  ],
+  "HR": [
+    "HRBP",
+    "HRSAT",
+    "CO"
+  ],
+  "CO": [
+    "HR",
+    "BP",
+    "STROKEVOLUME"
+  ],
+  "BP": [
+    "CATECHOL",
+    "CO",
+    "TPR"
+  ]
+}

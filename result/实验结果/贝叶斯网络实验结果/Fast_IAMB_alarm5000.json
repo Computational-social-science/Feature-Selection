@@ -1,0 +1,259 @@
+{
+  "HISTORY": [
+    "LVFAILURE",
+    "SHUNT",
+    "CATECHOL"
+  ],
+  "CVP": [
+    "LVEDVOLUME",
+    "STROKEVOLUME",
+    "TPR",
+    "PAP"
+  ],
+  "PCWP": [
+    "LVEDVOLUME"
+  ],
+  "HYPOVOLEMIA": [
+    "LVEDVOLUME",
+    "LVFAILURE",
+    "STROKEVOLUME",
+    "INSUFFANESTH"
+  ],
+  "LVEDVOLUME": [
+    "CVP",
+    "PCWP",
+    "HYPOVOLEMIA",
+    "LVFAILURE"
+  ],
+  "LVFAILURE": [
+    "HISTORY",
+    "LVEDVOLUME",
+    "STROKEVOLUME",
+    "HREKG",
+    "MINVOL",
+    "BP"
+  ],
+  "STROKEVOLUME": [
+    "HYPOVOLEMIA",
+    "LVFAILURE",
+    "HR",
+    "CO"
+  ],
+  "ERRLOWOUTPUT": [
+    "STROKEVOLUME",
+    "HRBP",
+    "ERRCAUTER",
+    "FIO2",
+    "PVSAT",
+    "PRESS",
+    "HR"
+  ],
+  "HRBP": [
+    "ERRLOWOUTPUT",
+    "TPR",
+    "HR"
+  ],
+  "HREKG": [
+    "ERRCAUTER",
+    "HR"
+  ],
+  "ERRCAUTER": [
+    "PCWP",
+    "HREKG",
+    "HRSAT",
+    "TPR",
+    "PRESS",
+    "VENTALV",
+    "CATECHOL",
+    "HR",
+    "CO"
+  ],
+  "HRSAT": [
+    "ERRCAUTER",
+    "HR",
+    "BP"
+  ],
+  "INSUFFANESTH": [
+    "LVFAILURE",
+    "ERRCAUTER",
+    "TPR",
+    "EXPCO2",
+    "MINVOL",
+    "DISCONNECT",
+    "CO"
+  ],
+  "ANAPHYLAXIS": [
+    "TPR",
+    "ARTCO2"
+  ],
+  "TPR": [
+    "ANAPHYLAXIS",
+    "ARTCO2",
+    "CATECHOL",
+    "CO",
+    "BP"
+  ],
+  "EXPCO2": [
+    "VENTLUNG",
+    "ARTCO2"
+  ],
+  "KINKEDTUBE": [
+    "LVEDVOLUME",
+    "HRSAT",
+    "INTUBATION",
+    "PRESS",
+    "VENTTUBE",
+    "VENTLUNG",
+    "BP"
+  ],
+  "MINVOL": [
+    "INSUFFANESTH",
+    "INTUBATION",
+    "VENTLUNG"
+  ],
+  "FIO2": [
+    "HYPOVOLEMIA",
+    "HRSAT",
+    "PVSAT",
+    "SHUNT",
+    "ARTCO2",
+    "BP"
+  ],
+  "PVSAT": [
+    "STROKEVOLUME",
+    "ANAPHYLAXIS",
+    "TPR",
+    "FIO2",
+    "SAO2",
+    "SHUNT",
+    "VENTALV",
+    "BP"
+  ],
+  "SAO2": [
+    "PVSAT",
+    "SHUNT",
+    "CATECHOL"
+  ],
+  "PAP": [
+    "PULMEMBOLUS"
+  ],
+  "PULMEMBOLUS": [
+    "PAP",
+    "SHUNT",
+    "CATECHOL"
+  ],
+  "SHUNT": [
+    "HRBP",
+    "TPR",
+    "PVSAT",
+    "SAO2",
+    "PULMEMBOLUS",
+    "INTUBATION",
+    "VENTMACH"
+  ],
+  "INTUBATION": [
+    "MINVOL",
+    "PVSAT",
+    "SAO2",
+    "PAP",
+    "SHUNT",
+    "VENTLUNG",
+    "VENTALV",
+    "BP"
+  ],
+  "PRESS": [
+    "KINKEDTUBE",
+    "INTUBATION",
+    "VENTTUBE"
+  ],
+  "DISCONNECT": [
+    "CVP",
+    "HYPOVOLEMIA",
+    "HRBP",
+    "ERRCAUTER",
+    "VENTMACH",
+    "VENTTUBE",
+    "VENTALV",
+    "CO",
+    "BP"
+  ],
+  "MINVOLSET": [
+    "VENTMACH"
+  ],
+  "VENTMACH": [
+    "PCWP",
+    "DISCONNECT",
+    "MINVOLSET",
+    "VENTTUBE"
+  ],
+  "VENTTUBE": [
+    "PCWP",
+    "KINKEDTUBE",
+    "INTUBATION",
+    "PRESS",
+    "DISCONNECT",
+    "VENTMACH",
+    "VENTLUNG",
+    "CO",
+    "BP"
+  ],
+  "VENTLUNG": [
+    "ERRLOWOUTPUT",
+    "EXPCO2",
+    "MINVOL",
+    "INTUBATION",
+    "VENTALV",
+    "ARTCO2"
+  ],
+  "VENTALV": [
+    "INSUFFANESTH",
+    "PVSAT",
+    "SHUNT",
+    "INTUBATION",
+    "VENTLUNG",
+    "ARTCO2",
+    "CO"
+  ],
+  "ARTCO2": [
+    "HYPOVOLEMIA",
+    "HRSAT",
+    "TPR",
+    "EXPCO2",
+    "VENTLUNG",
+    "VENTALV",
+    "BP"
+  ],
+  "CATECHOL": [
+    "HYPOVOLEMIA",
+    "HRSAT",
+    "INSUFFANESTH",
+    "TPR",
+    "PULMEMBOLUS",
+    "PRESS",
+    "ARTCO2",
+    "HR",
+    "BP"
+  ],
+  "HR": [
+    "STROKEVOLUME",
+    "HRBP",
+    "HREKG",
+    "ERRCAUTER",
+    "HRSAT",
+    "PRESS",
+    "CATECHOL",
+    "CO"
+  ],
+  "CO": [
+    "STROKEVOLUME",
+    "ERRCAUTER",
+    "TPR",
+    "HR",
+    "BP"
+  ],
+  "BP": [
+    "TPR",
+    "PVSAT",
+    "CO"
+  ]
+}

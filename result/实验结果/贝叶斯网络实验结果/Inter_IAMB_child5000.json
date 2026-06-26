@@ -1,0 +1,133 @@
+{
+  "BirthAsphyxia": [
+    "CO2Report",
+    "Disease",
+    "LungFlow"
+  ],
+  "HypDistrib": [
+    "HypoxiaInO2",
+    "ChestXray",
+    "LowerBodyO2",
+    "DuctFlow",
+    "CardiacMixing"
+  ],
+  "HypoxiaInO2": [
+    "HypDistrib",
+    "LowerBodyO2",
+    "RUQO2",
+    "CardiacMixing",
+    "LungParench"
+  ],
+  "CO2": [
+    "CO2Report",
+    "LungParench"
+  ],
+  "ChestXray": [
+    "XrayReport",
+    "GruntingReport",
+    "LungParench",
+    "LungFlow",
+    "Sick"
+  ],
+  "Grunting": [
+    "RUQO2",
+    "GruntingReport",
+    "Age",
+    "LungParench",
+    "Sick"
+  ],
+  "LVHreport": [
+    "LVH"
+  ],
+  "LowerBodyO2": [
+    "HypDistrib",
+    "HypoxiaInO2"
+  ],
+  "RUQO2": [
+    "HypoxiaInO2"
+  ],
+  "CO2Report": [
+    "HypDistrib",
+    "CO2",
+    "GruntingReport",
+    "CardiacMixing",
+    "LungParench"
+  ],
+  "XrayReport": [
+    "HypoxiaInO2",
+    "ChestXray",
+    "Grunting",
+    "LVHreport",
+    "LowerBodyO2"
+  ],
+  "Disease": [
+    "LVH",
+    "DuctFlow",
+    "CardiacMixing",
+    "LungParench",
+    "LungFlow",
+    "Sick"
+  ],
+  "GruntingReport": [
+    "HypDistrib",
+    "Grunting",
+    "RUQO2",
+    "Age",
+    "LungFlow"
+  ],
+  "Age": [
+    "CO2",
+    "LVHreport",
+    "XrayReport",
+    "Disease",
+    "GruntingReport",
+    "Sick"
+  ],
+  "LVH": [
+    "LVHreport",
+    "XrayReport",
+    "Disease",
+    "DuctFlow",
+    "CardiacMixing",
+    "LungFlow"
+  ],
+  "DuctFlow": [
+    "HypDistrib",
+    "CO2",
+    "CO2Report",
+    "Disease",
+    "GruntingReport",
+    "LungFlow"
+  ],
+  "CardiacMixing": [
+    "HypDistrib",
+    "HypoxiaInO2",
+    "CO2Report",
+    "Disease",
+    "LungParench"
+  ],
+  "LungParench": [
+    "HypoxiaInO2",
+    "ChestXray",
+    "Grunting",
+    "CO2Report",
+    "Disease",
+    "LungFlow"
+  ],
+  "LungFlow": [
+    "ChestXray",
+    "LowerBodyO2",
+    "RUQO2",
+    "CO2Report",
+    "Disease",
+    "LungParench"
+  ],
+  "Sick": [
+    "ChestXray",
+    "Grunting",
+    "Disease",
+    "Age",
+    "CardiacMixing",
+    "LungParench"
+  ]
+}

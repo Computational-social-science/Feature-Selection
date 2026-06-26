@@ -1,0 +1,70 @@
+alcoholism: {1: {'carcinoma', 'albumin', 'Steatosis'}, 2: {'carcinoma', 'albumin', 'Steatosis'}}
+vh_amn: {1: {'hbsag'}, 2: {'hbsag'}}
+hepatotoxic: {1: {'ESR'}, 2: {'ESR'}}
+THepatitis: {1: {'albumin', 'alcoholism'}, 2: {'albumin', 'alcoholism'}}
+hospital: {1: {'injections', 'spleen', 'edge'}, 2: {'injections', 'spleen', 'edge'}}
+surgery: {1: {'transfusion'}, 2: {'transfusion'}}
+gallstones: {1: {'jaundice', 'choledocholithotomy'}, 2: {'jaundice', 'choledocholithotomy'}}
+choledocholithotomy: {1: {'gallstones'}, 2: {'gallstones'}}
+injections: {1: {'palms', 'hbsag', 'hospital', 'nausea'}, 2: {'palms', 'hbsag', 'hospital', 'nausea'}}
+transfusion: {1: {'surgery'}, 2: {'surgery'}}
+ChHepatitis: {1: {'hbc_anti', 'hcv_anti', 'palms', 'fibrosis', 'hbeag', 'consciousness'}, 2: {'hbc_anti', 'hcv_anti', 'palms', 'fibrosis', 'hbeag', 'consciousness'}, 3: {'hcv_anti', 'edge', 'palms', 'phosphatase', 'hbeag', 'carcinoma', 'irregular_liver'}}
+sex: {1: {'PBC', 'hcv_anti'}, 2: {'PBC', 'hcv_anti'}}
+age: {1: {'Hyperbilirubinemia', 'carcinoma'}, 2: {'Hyperbilirubinemia', 'carcinoma'}, 3: {'Hyperbilirubinemia', 'carcinoma'}, 4: {'Hyperbilirubinemia', 'carcinoma'}}
+PBC: {1: {'carcinoma', 'ama', 'palms'}, 2: {'carcinoma', 'ama', 'palms'}}
+fibrosis: {1: {'spiders', 'nausea', 'edge', 'palms', 'platelet', 'cholesterol', 'albumin', 'phosphatase', 'ChHepatitis', 'inr', 'carcinoma', 'irregular_liver'}, 2: {'spiders', 'nausea', 'edge', 'palms', 'platelet', 'cholesterol', 'albumin', 'phosphatase', 'ChHepatitis', 'inr', 'carcinoma', 'irregular_liver'}}
+diabetes: {1: {'jaundice', 'obesity'}, 2: {'jaundice', 'obesity'}}
+obesity: {1: {'palms', 'irregular_liver', 'diabetes', 'spleen'}, 2: {'palms', 'irregular_liver', 'diabetes', 'spleen'}}
+Steatosis: {1: {'carcinoma', 'Cirrhosis', 'edge'}, 2: {'carcinoma', 'Cirrhosis', 'edge'}}
+Cirrhosis: {1: {'hbsag', 'spiders', 'spleen', 'edge', 'palms', 'Steatosis', 'cholesterol', 'albumin', 'carcinoma', 'irregular_liver'}, 2: {'hbsag', 'spiders', 'spleen', 'edge', 'palms', 'Steatosis', 'cholesterol', 'albumin', 'carcinoma', 'irregular_liver'}, 3: {'hbsag', 'spiders', 'spleen', 'edge', 'palms', 'Steatosis', 'cholesterol', 'albumin', 'carcinoma', 'irregular_liver'}}
+Hyperbilirubinemia: {1: {'age'}, 2: {'age'}}
+triglycerides: {1: {'Steatosis'}, 2: {'Steatosis'}, 3: {'Steatosis'}}
+RHepatitis: {1: {'phosphatase'}, 2: {'phosphatase'}}
+fatigue: {1: {'albumin', 'THepatitis'}, 2: {'albumin', 'THepatitis'}}
+bilirubin: {1: {'skin', 'edge', 'jaundice', 'carcinoma', 'irregular_liver'}, 2: {'skin', 'edge', 'jaundice', 'carcinoma', 'irregular_liver'}, 3: {'skin', 'edge', 'jaundice', 'carcinoma', 'irregular_liver'}, 4: {'skin', 'edge', 'jaundice', 'carcinoma', 'irregular_liver'}}
+itching: {1: {'bilirubin', 'hbc_anti'}, 2: {'bilirubin', 'hbc_anti'}}
+upper_pain: {1: {'hbc_anti', 'hbsag', 'Cirrhosis', 'irregular_liver'}, 2: {'hbc_anti', 'hbsag', 'Cirrhosis', 'irregular_liver'}}
+fat: {1: {'hbeag', 'gallstones'}, 2: {'hbeag', 'gallstones'}}
+pain_ruq: {1: {'Hyperbilirubinemia', 'spiders', 'jaundice', 'nausea'}, 2: {'Hyperbilirubinemia', 'spiders', 'jaundice', 'nausea'}}
+pressure_ruq: {1: {'PBC'}, 2: {'PBC'}}
+phosphatase: {1: {'ChHepatitis'}, 2: {'ChHepatitis'}, 3: {'ChHepatitis'}}
+skin: {1: {'bilirubin'}, 2: {'bilirubin'}}
+ama: {1: {'PBC'}, 2: {'PBC'}}
+le_cells: {1: {'PBC', 'palms'}, 2: {'PBC', 'palms'}}
+joints: {1: {'pain', 'jaundice'}, 2: {'pain', 'jaundice'}}
+pain: {1: {'spiders', 'spleen', 'palms', 'joints', 'hbeag'}, 2: {'spiders', 'spleen', 'palms', 'joints', 'hbeag'}}
+proteins: {1: {'carcinoma', 'ascites'}, 2: {'carcinoma', 'ascites'}}
+edema: {1: {'carcinoma', 'Cirrhosis'}, 2: {'carcinoma', 'Cirrhosis'}}
+platelet: {1: {'hbeag', 'hbc_anti', 'Cirrhosis', 'irregular_liver'}, 2: {'hbeag', 'hbc_anti', 'Cirrhosis', 'irregular_liver'}, 3: {'hbc_anti', 'hbeag', 'PBC', 'carcinoma', 'irregular_liver'}, 4: {'hbc_anti', 'hbeag', 'PBC', 'carcinoma', 'irregular_liver'}}
+inr: {1: {'hbsag', 'hcv_anti', 'spiders', 'edge', 'spleen', 'nausea', 'bleeding', 'carcinoma', 'irregular_liver'}, 2: {'hbc_anti', 'hcv_anti', 'nausea', 'palms', 'Cirrhosis', 'irregular_liver'}, 3: {'hbc_anti', 'hcv_anti', 'nausea', 'palms', 'Cirrhosis', 'irregular_liver'}}
+bleeding: {1: {'inr'}, 2: {'inr'}}
+flatulence: {1: {'upper_pain'}, 2: {'upper_pain'}}
+alcohol: {1: {'Cirrhosis'}, 2: {'Cirrhosis'}}
+encephalopathy: {1: {'ESR', 'density', 'urea', 'cholesterol', 'albumin', 'ggtp', 'carcinoma', 'consciousness'}, 2: {'carcinoma', 'density', 'edge'}}
+urea: {1: {'carcinoma', 'encephalopathy', 'ggtp', 'edge'}, 2: {'carcinoma', 'encephalopathy', 'ggtp', 'edge'}, 3: set()}
+ascites: {1: {'proteins', 'spleen', 'cholesterol'}, 2: {'proteins', 'spleen', 'cholesterol'}}
+hepatomegaly: {1: {'hepatalgia'}, 2: {'hepatalgia'}}
+hepatalgia: {1: {'hepatomegaly'}, 2: {'hepatomegaly'}}
+density: {1: {'encephalopathy'}, 2: {'encephalopathy'}}
+ESR: {1: {'PBC', 'palms'}, 2: {'PBC', 'palms'}, 3: {'PBC', 'palms'}}
+alt: {1: {'hbeag', 'Steatosis'}, 2: {'ChHepatitis'}, 3: {'ChHepatitis'}, 4: {'ChHepatitis'}}
+ast: {1: {'RHepatitis', 'edge'}, 2: {'palms', 'THepatitis', 'spiders', 'edge'}, 3: {'ChHepatitis'}, 4: {'ChHepatitis'}}
+amylase: {1: {'urea', 'hepatomegaly', 'spiders', 'edge'}, 2: {'spiders', 'edge', 'jaundice', 'gallstones', 'hepatomegaly'}, 3: {'spiders', 'edge', 'jaundice', 'gallstones', 'hepatomegaly'}}
+ggtp: {1: {'Hyperbilirubinemia', 'carcinoma', 'palms'}, 2: {'PBC', 'palms'}, 3: {'PBC', 'palms'}, 4: {'PBC', 'palms'}}
+cholesterol: {1: {'PBC', 'carcinoma'}, 2: {'PBC', 'carcinoma'}, 3: {'PBC', 'carcinoma'}}
+hbsag: {1: {'hbc_anti', 'ChHepatitis', 'albumin'}, 2: {'hbc_anti', 'ChHepatitis', 'albumin'}}
+hbsag_anti: {1: {'triglycerides'}, 2: {'triglycerides'}}
+anorexia: {1: {'RHepatitis', 'ast', 'hepatalgia', 'spiders'}, 2: {'RHepatitis', 'ast', 'hepatalgia', 'spiders'}}
+nausea: {1: {'carcinoma', 'hbsag', 'palms', 'inr'}, 2: {'carcinoma', 'hbsag', 'palms', 'inr'}}
+spleen: {1: {'carcinoma', 'Cirrhosis', 'irregular_liver'}, 2: {'carcinoma', 'Cirrhosis', 'irregular_liver'}}
+consciousness: {1: {'encephalopathy'}, 2: {'encephalopathy'}}
+spiders: {1: {'palms', 'Cirrhosis'}, 2: {'palms', 'Cirrhosis'}}
+jaundice: {1: {'bilirubin'}, 2: {'bilirubin'}}
+albumin: {1: {'hbeag', 'Cirrhosis'}, 2: {'hbeag', 'Cirrhosis'}, 3: {'hbeag', 'Cirrhosis'}}
+edge: {1: {'hbc_anti', 'hcv_anti', 'Cirrhosis', 'albumin', 'carcinoma', 'irregular_liver'}, 2: {'hbc_anti', 'hcv_anti', 'Cirrhosis', 'albumin', 'carcinoma', 'irregular_liver'}}
+irregular_liver: {1: {'Cirrhosis'}, 2: {'Cirrhosis'}}
+hbc_anti: {1: {'palms', 'vh_amn', 'edge'}, 2: {'palms', 'vh_amn', 'edge'}}
+hcv_anti: {1: {'albumin', 'inr', 'edge'}, 2: {'edge', 'albumin', 'ChHepatitis', 'inr', 'fat'}}
+palms: {1: {'Cirrhosis'}, 2: {'Cirrhosis'}}
+hbeag: {1: {'ChHepatitis'}, 2: {'ChHepatitis'}}
+carcinoma: {1: {'Cirrhosis'}, 2: {'spiders', 'spleen', 'edge', 'palms', 'cholesterol', 'albumin', 'PBC', 'irregular_liver'}}

@@ -1,0 +1,27 @@
+GoodStudent: {False: {'SocioEcon', 'Age'}, True: {'SocioEcon', 'Age'}}
+Age: {1: {'GoodStudent', 'RiskAversion', 'SeniorTrain', 'DrivingSkill'}, 2: {'GoodStudent', 'RiskAversion', 'SocioEcon', 'SeniorTrain', 'MedCost', 'DrivingSkill'}, 3: {'GoodStudent', 'RiskAversion', 'SocioEcon', 'SeniorTrain', 'DrivingSkill'}}
+SocioEcon: {1: {'RiskAversion', 'RuggedAuto', 'MakeModel', 'HomeBase', 'OtherCar', 'Antilock', 'Age', 'CarValue'}, 2: {'AntiTheft', 'HomeBase', 'VehicleYear', 'OtherCar', 'MakeModel'}, 3: {'AntiTheft', 'HomeBase', 'VehicleYear', 'OtherCar', 'MakeModel'}, 4: {'AntiTheft', 'HomeBase', 'VehicleYear', 'OtherCar', 'MakeModel'}}
+RiskAversion: {1: {'AntiTheft', 'HomeBase', 'SeniorTrain', 'DrivHist', 'Age', 'DrivQuality'}, 2: {'AntiTheft', 'HomeBase', 'SeniorTrain', 'DrivHist', 'Age', 'DrivQuality'}, 3: {'AntiTheft', 'HomeBase', 'SocioEcon', 'SeniorTrain', 'DrivHist', 'Age', 'DrivQuality'}, 4: {'AntiTheft', 'HomeBase', 'SeniorTrain', 'DrivHist', 'DrivQuality'}}
+VehicleYear: {1: {'MakeModel', 'RuggedAuto', 'SocioEcon', 'Airbag', 'Antilock', 'CarValue'}, 2: {'MakeModel', 'RuggedAuto', 'SocioEcon', 'Airbag', 'Antilock', 'CarValue'}}
+ThisCarDam: {1: {'ThisCarCost', 'Accident', 'DrivingSkill'}, 2: {'ThisCarCost', 'MedCost', 'Accident', 'DrivingSkill'}, 3: {'ThisCarCost', 'MedCost', 'Accident', 'DrivingSkill'}, 4: {'ThisCarCost', 'MedCost', 'Accident', 'DrivingSkill'}}
+RuggedAuto: {1: {'ThisCarCost', 'Cushioning', 'MakeModel', 'VehicleYear'}, 2: {'Cushioning', 'HomeBase', 'VehicleYear', 'ThisCarCost', 'MakeModel'}, 3: {'ThisCarDam', 'Cushioning', 'SocioEcon', 'MakeModel', 'CarValue'}}
+Accident: {1: {'ThisCarDam', 'OtherCarCost', 'DrivQuality'}, 2: {'ThisCarDam', 'MedCost', 'OtherCarCost', 'DrivQuality'}, 3: {'ThisCarDam', 'DrivQuality', 'OtherCarCost', 'ILiCost'}, 4: {'ThisCarDam', 'Mileage', 'ILiCost', 'OtherCarCost', 'DrivQuality'}}
+MakeModel: {1: {'VehicleYear', 'RuggedAuto', 'SocioEcon', 'Airbag', 'Antilock', 'CarValue'}, 2: {'RuggedAuto', 'SocioEcon', 'Airbag', 'Antilock', 'CarValue'}, 3: {'VehicleYear', 'RuggedAuto', 'SocioEcon', 'Airbag', 'Antilock', 'CarValue'}, 4: {'Cushioning', 'VehicleYear', 'RuggedAuto', 'SocioEcon', 'Antilock', 'CarValue'}, 5: {'VehicleYear', 'RuggedAuto', 'SocioEcon', 'Airbag', 'Antilock', 'CarValue'}}
+DrivQuality: {1: {'RiskAversion', 'Accident', 'DrivingSkill'}, 2: {'RiskAversion', 'Accident', 'DrivingSkill'}, 3: {'RiskAversion', 'Accident', 'DrivingSkill'}}
+Mileage: {1: {'Accident', 'CarValue', 'RuggedAuto'}, 2: {'Accident', 'CarValue'}, 3: {'Accident', 'RuggedAuto', 'CarValue'}, 4: {'Accident', 'CarValue', 'RuggedAuto'}}
+Antilock: {False: {'MakeModel', 'VehicleYear'}, True: {'ThisCarCost', 'Cushioning', 'MakeModel', 'VehicleYear'}}
+DrivingSkill: {1: {'DrivHist', 'Age', 'DrivQuality'}, 2: {'DrivHist', 'Age', 'DrivQuality'}, 3: {'DrivHist', 'Age', 'DrivQuality'}}
+SeniorTrain: {False: {'RiskAversion', 'Age', 'DrivingSkill'}, True: {'RiskAversion', 'Age', 'DrivQuality'}}
+ThisCarCost: {1: {'ThisCarDam', 'PropCost', 'CarValue'}, 2: {'ThisCarDam', 'PropCost', 'CarValue'}, 3: {'ThisCarDam', 'PropCost', 'CarValue'}, 4: {'ThisCarDam', 'PropCost', 'MedCost', 'OtherCarCost'}}
+Theft: {False: {'ThisCarCost', 'HomeBase', 'CarValue'}, True: {'ThisCarCost', 'HomeBase', 'CarValue'}}
+CarValue: {1: {'ThisCarCost', 'MakeModel', 'VehicleYear'}, 2: {'ThisCarCost', 'MakeModel', 'Mileage', 'VehicleYear'}, 3: {'ThisCarCost', 'MakeModel', 'Mileage', 'VehicleYear'}, 4: {'Cushioning', 'Mileage', 'RuggedAuto', 'ThisCarCost', 'SocioEcon', 'MakeModel', 'Antilock'}, 5: {'Cushioning', 'Mileage', 'VehicleYear', 'ThisCarCost', 'MakeModel'}}
+HomeBase: {1: {'AntiTheft', 'SocioEcon'}, 2: {'SocioEcon', 'RiskAversion', 'SeniorTrain'}, 3: {'SocioEcon', 'RiskAversion'}, 4: {'SocioEcon', 'RiskAversion', 'SeniorTrain'}}
+AntiTheft: {False: {'SocioEcon', 'RiskAversion', 'Age'}, True: {'SocioEcon', 'RiskAversion', 'Age'}}
+PropCost: {1: {'ThisCarCost', 'Accident', 'OtherCarCost'}, 2: {'ThisCarCost', 'Accident', 'OtherCarCost'}, 3: {'ThisCarCost', 'Accident', 'OtherCarCost'}, 4: {'ThisCarCost', 'Accident', 'OtherCarCost'}}
+OtherCarCost: {1: {'PropCost', 'Accident'}, 2: {'PropCost', 'Accident'}, 3: {'PropCost', 'Accident'}}
+OtherCar: {False: {'SocioEcon', 'HomeBase', 'RuggedAuto'}, True: {'SocioEcon', 'HomeBase', 'RuggedAuto'}}
+MedCost: {1: {'ThisCarCost', 'Cushioning', 'Accident'}, 2: {'ThisCarCost', 'Cushioning', 'Accident'}, 3: {'ThisCarCost', 'Cushioning', 'Accident'}, 4: {'ThisCarCost', 'Cushioning', 'Accident'}}
+Cushioning: {1: {'Airbag', 'MedCost', 'RuggedAuto'}, 2: {'Airbag', 'Antilock', 'RuggedAuto'}, 3: {'Airbag', 'MedCost', 'RuggedAuto'}, 4: {'Airbag', 'MedCost', 'RuggedAuto'}}
+Airbag: {False: {'Cushioning', 'MakeModel', 'VehicleYear'}, True: {'Cushioning', 'MakeModel', 'VehicleYear'}}
+ILiCost: {1: {'Accident'}, 2: {'Accident'}, 3: {'Accident'}, 4: {'Accident'}}
+DrivHist: {1: {'RiskAversion', 'Age', 'DrivingSkill'}, 2: {'RiskAversion', 'Age', 'DrivingSkill'}, 3: {'RiskAversion', 'Age', 'DrivingSkill'}}

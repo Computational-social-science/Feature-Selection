@@ -1,0 +1,551 @@
+{
+    "GoodStudent": {
+        "True": [
+            "SocioEcon",
+            "Age"
+        ],
+        "False": [
+            "SocioEcon",
+            "Age"
+        ]
+    },
+    "Age": {
+        "Adolescent": [
+            "Accident",
+            "Cushioning",
+            "RiskAversion",
+            "SeniorTrain",
+            "SocioEcon"
+        ],
+        "Adult": [
+            "Accident",
+            "Cushioning",
+            "RiskAversion",
+            "SeniorTrain",
+            "SocioEcon"
+        ],
+        "Senior": [
+            "Accident",
+            "Cushioning",
+            "RiskAversion",
+            "SeniorTrain",
+            "SocioEcon"
+        ]
+    },
+    "SocioEcon": {
+        "Prole": [
+            "RiskAversion",
+            "Age"
+        ],
+        "Middle": [
+            "RiskAversion",
+            "Age"
+        ],
+        "UpperMiddle": [
+            "RiskAversion",
+            "Age"
+        ],
+        "Wealthy": [
+            "RiskAversion",
+            "Age"
+        ]
+    },
+    "RiskAversion": {
+        "Psychopath": [
+            "Age",
+            "DrivingSkill",
+            "SocioEcon"
+        ],
+        "Adventurous": [
+            "Age",
+            "DrivingSkill",
+            "SocioEcon"
+        ],
+        "Normal": [
+            "Age",
+            "DrivingSkill",
+            "SocioEcon"
+        ],
+        "Cautious": [
+            "Age",
+            "DrivingSkill",
+            "SocioEcon"
+        ]
+    },
+    "VehicleYear": {
+        "Current": [
+            "MakeModel",
+            "RiskAversion",
+            "Mileage",
+            "SocioEcon"
+        ],
+        "Older": [
+            "MakeModel",
+            "RiskAversion",
+            "Mileage",
+            "SocioEcon"
+        ]
+    },
+    "ThisCarDam": {
+        "None": [
+            "Accident",
+            "Theft",
+            "RuggedAuto",
+            "CarValue"
+        ],
+        "Mild": [
+            "Accident",
+            "Theft",
+            "RuggedAuto",
+            "CarValue"
+        ],
+        "Moderate": [
+            "Accident",
+            "Theft",
+            "RuggedAuto",
+            "CarValue"
+        ],
+        "Severe": [
+            "Accident",
+            "Theft",
+            "RuggedAuto",
+            "CarValue"
+        ]
+    },
+    "RuggedAuto": {
+        "EggShell": [
+            "Accident",
+            "Airbag",
+            "MakeModel",
+            "VehicleYear"
+        ],
+        "Football": [
+            "Accident",
+            "Airbag",
+            "MakeModel",
+            "VehicleYear"
+        ],
+        "Tank": [
+            "Accident",
+            "Airbag",
+            "MakeModel",
+            "VehicleYear"
+        ]
+    },
+    "Accident": {
+        "None": [
+            "Antilock",
+            "Cushioning",
+            "Age",
+            "Mileage",
+            "RuggedAuto",
+            "DrivQuality"
+        ],
+        "Mild": [
+            "Antilock",
+            "Cushioning",
+            "Age",
+            "Mileage",
+            "RuggedAuto",
+            "DrivQuality"
+        ],
+        "Moderate": [
+            "Antilock",
+            "Cushioning",
+            "Age",
+            "Mileage",
+            "RuggedAuto",
+            "DrivQuality"
+        ],
+        "Severe": [
+            "Antilock",
+            "Cushioning",
+            "Age",
+            "Mileage",
+            "RuggedAuto",
+            "DrivQuality"
+        ]
+    },
+    "MakeModel": {
+        "SportsCar": [
+            "RiskAversion",
+            "Mileage",
+            "SocioEcon",
+            "VehicleYear"
+        ],
+        "Economy": [
+            "RiskAversion",
+            "Mileage",
+            "SocioEcon",
+            "VehicleYear"
+        ],
+        "FamilySedan": [
+            "RiskAversion",
+            "Mileage",
+            "SocioEcon",
+            "VehicleYear"
+        ],
+        "Luxury": [
+            "RiskAversion",
+            "Mileage",
+            "SocioEcon",
+            "VehicleYear"
+        ],
+        "SuperLuxury": [
+            "RiskAversion",
+            "Mileage",
+            "SocioEcon",
+            "VehicleYear"
+        ]
+    },
+    "DrivQuality": {
+        "Poor": [
+            "Antilock",
+            "RiskAversion",
+            "Mileage",
+            "DrivingSkill"
+        ],
+        "Normal": [
+            "Antilock",
+            "RiskAversion",
+            "Mileage",
+            "DrivingSkill"
+        ],
+        "Excellent": [
+            "Antilock",
+            "RiskAversion",
+            "Mileage",
+            "DrivingSkill"
+        ]
+    },
+    "Mileage": {
+        "FiveThou": [
+            "Antilock",
+            "DrivQuality",
+            "MakeModel",
+            "VehicleYear"
+        ],
+        "TwentyThou": [
+            "Antilock",
+            "DrivQuality",
+            "MakeModel",
+            "VehicleYear"
+        ],
+        "FiftyThou": [
+            "Antilock",
+            "DrivQuality",
+            "MakeModel",
+            "VehicleYear"
+        ],
+        "Domino": [
+            "Antilock",
+            "DrivQuality",
+            "MakeModel",
+            "VehicleYear"
+        ]
+    },
+    "Antilock": {
+        "True": [
+            "Mileage",
+            "DrivQuality",
+            "MakeModel",
+            "VehicleYear"
+        ],
+        "False": [
+            "Mileage",
+            "DrivQuality",
+            "MakeModel",
+            "VehicleYear"
+        ]
+    },
+    "DrivingSkill": {
+        "SubStandard": [
+            "Age",
+            "RiskAversion",
+            "SeniorTrain"
+        ],
+        "Normal": [
+            "Age",
+            "RiskAversion",
+            "SeniorTrain"
+        ],
+        "Expert": [
+            "Age",
+            "RiskAversion",
+            "SeniorTrain"
+        ]
+    },
+    "SeniorTrain": {
+        "True": [
+            "RiskAversion",
+            "Age"
+        ],
+        "False": [
+            "RiskAversion",
+            "Age"
+        ]
+    },
+    "ThisCarCost": {
+        "Thousand": [
+            "Theft",
+            "ThisCarDam",
+            "CarValue",
+            "OtherCarCost"
+        ],
+        "TenThou": [
+            "Theft",
+            "ThisCarDam",
+            "CarValue",
+            "OtherCarCost"
+        ],
+        "HundredThou": [
+            "Theft",
+            "ThisCarDam",
+            "CarValue",
+            "OtherCarCost"
+        ],
+        "Million": [
+            "Theft",
+            "ThisCarDam",
+            "CarValue",
+            "OtherCarCost"
+        ]
+    },
+    "Theft": {
+        "True": [
+            "HomeBase",
+            "ThisCarDam",
+            "AntiTheft",
+            "CarValue"
+        ],
+        "False": [
+            "HomeBase",
+            "ThisCarDam",
+            "AntiTheft",
+            "CarValue"
+        ]
+    },
+    "CarValue": {
+        "FiveThou": [
+            "HomeBase",
+            "Theft",
+            "Mileage",
+            "ThisCarDam",
+            "AntiTheft",
+            "MakeModel",
+            "VehicleYear"
+        ],
+        "TenThou": [
+            "HomeBase",
+            "Theft",
+            "Mileage",
+            "ThisCarDam",
+            "AntiTheft",
+            "MakeModel",
+            "VehicleYear"
+        ],
+        "TwentyThou": [
+            "HomeBase",
+            "Theft",
+            "Mileage",
+            "ThisCarDam",
+            "AntiTheft",
+            "MakeModel",
+            "VehicleYear"
+        ],
+        "FiftyThou": [
+            "HomeBase",
+            "Theft",
+            "Mileage",
+            "ThisCarDam",
+            "AntiTheft",
+            "MakeModel",
+            "VehicleYear"
+        ],
+        "Million": [
+            "HomeBase",
+            "Theft",
+            "Mileage",
+            "ThisCarDam",
+            "AntiTheft",
+            "MakeModel",
+            "VehicleYear"
+        ]
+    },
+    "HomeBase": {
+        "Secure": [
+            "RiskAversion",
+            "AntiTheft",
+            "SocioEcon",
+            "CarValue"
+        ],
+        "City": [
+            "RiskAversion",
+            "AntiTheft",
+            "SocioEcon",
+            "CarValue"
+        ],
+        "Suburb": [
+            "RiskAversion",
+            "AntiTheft",
+            "SocioEcon",
+            "CarValue"
+        ],
+        "Rural": [
+            "RiskAversion",
+            "AntiTheft",
+            "SocioEcon",
+            "CarValue"
+        ]
+    },
+    "AntiTheft": {
+        "True": [
+            "HomeBase",
+            "RiskAversion",
+            "SocioEcon",
+            "CarValue"
+        ],
+        "False": [
+            "HomeBase",
+            "RiskAversion",
+            "SocioEcon",
+            "CarValue"
+        ]
+    },
+    "PropCost": {
+        "Thousand": [
+            "ThisCarCost",
+            "OtherCarCost"
+        ],
+        "TenThou": [
+            "ThisCarCost",
+            "OtherCarCost"
+        ],
+        "HundredThou": [
+            "ThisCarCost",
+            "OtherCarCost"
+        ],
+        "Million": [
+            "ThisCarCost",
+            "OtherCarCost"
+        ]
+    },
+    "OtherCarCost": {
+        "Thousand": [
+            "ThisCarCost",
+            "Accident",
+            "RuggedAuto"
+        ],
+        "TenThou": [
+            "ThisCarCost",
+            "Accident",
+            "RuggedAuto"
+        ],
+        "HundredThou": [
+            "ThisCarCost",
+            "Accident",
+            "RuggedAuto"
+        ],
+        "Million": [
+            "ThisCarCost",
+            "Accident",
+            "RuggedAuto"
+        ]
+    },
+    "OtherCar": {
+        "True": [
+            "SocioEcon"
+        ],
+        "False": [
+            "SocioEcon"
+        ]
+    },
+    "MedCost": {
+        "Thousand": [
+            "Accident",
+            "Cushioning",
+            "Age"
+        ],
+        "TenThou": [
+            "Accident",
+            "Cushioning",
+            "Age"
+        ],
+        "HundredThou": [
+            "Accident",
+            "Cushioning",
+            "Age"
+        ],
+        "Million": [
+            "Accident",
+            "Cushioning",
+            "Age"
+        ]
+    },
+    "Cushioning": {
+        "Poor": [
+            "Accident",
+            "Age",
+            "Airbag",
+            "RuggedAuto"
+        ],
+        "Fair": [
+            "Accident",
+            "Age",
+            "Airbag",
+            "RuggedAuto"
+        ],
+        "Good": [
+            "Accident",
+            "Age",
+            "Airbag",
+            "RuggedAuto"
+        ],
+        "Excellent": [
+            "Accident",
+            "Age",
+            "Airbag",
+            "RuggedAuto"
+        ]
+    },
+    "Airbag": {
+        "True": [
+            "RuggedAuto",
+            "MakeModel",
+            "VehicleYear"
+        ],
+        "False": [
+            "RuggedAuto",
+            "MakeModel",
+            "VehicleYear"
+        ]
+    },
+    "ILiCost": {
+        "Thousand": [
+            "Accident"
+        ],
+        "TenThou": [
+            "Accident"
+        ],
+        "HundredThou": [
+            "Accident"
+        ],
+        "Million": [
+            "Accident"
+        ]
+    },
+    "DrivHist": {
+        "Zero": [
+            "DrivingSkill",
+            "RiskAversion"
+        ],
+        "One": [
+            "DrivingSkill",
+            "RiskAversion"
+        ],
+        "Many": [
+            "DrivingSkill",
+            "RiskAversion"
+        ]
+    }
+}

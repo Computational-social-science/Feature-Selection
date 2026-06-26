@@ -1,0 +1,163 @@
+{
+  "HISTORY": [
+    "CO",
+    "HREKG",
+    "LVFAILURE"
+  ],
+  "CVP": [
+    "LVEDVOLUME"
+  ],
+  "PCWP": [
+    "HYPOVOLEMIA",
+    "LVEDVOLUME",
+    "HR"
+  ],
+  "HYPOVOLEMIA": [
+    "LVEDVOLUME"
+  ],
+  "LVEDVOLUME": [
+    "HYPOVOLEMIA",
+    "CVP",
+    "PCWP"
+  ],
+  "LVFAILURE": [
+    "LVEDVOLUME",
+    "STROKEVOLUME"
+  ],
+  "STROKEVOLUME": [
+    "VENTLUNG",
+    "CO"
+  ],
+  "ERRLOWOUTPUT": [
+    "HRBP",
+    "EXPCO2"
+  ],
+  "HRBP": [
+    "HR",
+    "ERRLOWOUTPUT"
+  ],
+  "HREKG": [
+    "ERRCAUTER",
+    "HR"
+  ],
+  "ERRCAUTER": [
+    "HRSAT",
+    "HRBP",
+    "HREKG"
+  ],
+  "HRSAT": [
+    "HRBP",
+    "ERRCAUTER"
+  ],
+  "INSUFFANESTH": [
+    "PAP"
+  ],
+  "ANAPHYLAXIS": [
+    "TPR"
+  ],
+  "TPR": [
+    "BP",
+    "CO",
+    "VENTALV"
+  ],
+  "EXPCO2": [
+    "ARTCO2",
+    "MINVOL",
+    "INTUBATION"
+  ],
+  "KINKEDTUBE": [
+    "PRESS",
+    "VENTLUNG",
+    "MINVOLSET"
+  ],
+  "MINVOL": [
+    "PVSAT",
+    "VENTTUBE",
+    "INTUBATION"
+  ],
+  "FIO2": [
+    "PVSAT",
+    "VENTALV"
+  ],
+  "PVSAT": [
+    "VENTLUNG",
+    "EXPCO2",
+    "SAO2"
+  ],
+  "SAO2": [
+    "PVSAT",
+    "SHUNT"
+  ],
+  "PAP": [
+    "PULMEMBOLUS"
+  ],
+  "PULMEMBOLUS": [
+    "PAP",
+    "SHUNT"
+  ],
+  "SHUNT": [
+    "VENTLUNG",
+    "VENTALV"
+  ],
+  "INTUBATION": [
+    "VENTALV",
+    "EXPCO2"
+  ],
+  "PRESS": [
+    "DISCONNECT",
+    "VENTLUNG",
+    "MINVOL",
+    "VENTMACH"
+  ],
+  "DISCONNECT": [
+    "VENTTUBE",
+    "VENTMACH"
+  ],
+  "MINVOLSET": [
+    "VENTTUBE"
+  ],
+  "VENTMACH": [
+    "MINVOLSET",
+    "VENTTUBE",
+    "DISCONNECT"
+  ],
+  "VENTTUBE": [
+    "VENTLUNG",
+    "DISCONNECT",
+    "VENTMACH"
+  ],
+  "VENTLUNG": [
+    "EXPCO2",
+    "VENTTUBE",
+    "VENTALV"
+  ],
+  "VENTALV": [
+    "VENTLUNG",
+    "INTUBATION",
+    "ARTCO2"
+  ],
+  "ARTCO2": [
+    "EXPCO2",
+    "VENTLUNG",
+    "VENTALV"
+  ],
+  "CATECHOL": [
+    "BP",
+    "HRBP",
+    "HREKG"
+  ],
+  "HR": [
+    "HRBP",
+    "HREKG"
+  ],
+  "CO": [
+    "HR",
+    "STROKEVOLUME",
+    "BP"
+  ],
+  "BP": [
+    "TPR",
+    "VENTMACH",
+    "CO"
+  ]
+}

@@ -1,0 +1,536 @@
+{
+    "HISTORY": {
+        "TRUE": [
+            "LVFAILURE"
+        ],
+        "FALSE": [
+            "LVFAILURE"
+        ]
+    },
+    "CVP": {
+        "LOW": [
+            "LVEDVOLUME"
+        ],
+        "NORMAL": [
+            "LVEDVOLUME"
+        ],
+        "HIGH": [
+            "LVEDVOLUME"
+        ]
+    },
+    "PCWP": {
+        "LOW": [
+            "LVEDVOLUME"
+        ],
+        "NORMAL": [
+            "LVEDVOLUME"
+        ],
+        "HIGH": [
+            "LVEDVOLUME"
+        ]
+    },
+    "HYPOVOLEMIA": {
+        "TRUE": [
+            "LVFAILURE"
+        ],
+        "FALSE": [
+            "LVFAILURE"
+        ]
+    },
+    "LVEDVOLUME": {
+        "LOW": [
+            "HYPOVOLEMIA",
+            "LVFAILURE"
+        ],
+        "NORMAL": [
+            "HYPOVOLEMIA",
+            "LVFAILURE"
+        ],
+        "HIGH": [
+            "HYPOVOLEMIA",
+            "LVFAILURE"
+        ]
+    },
+    "LVFAILURE": {
+        "TRUE": [
+            "HYPOVOLEMIA"
+        ],
+        "FALSE": [
+            "HYPOVOLEMIA"
+        ]
+    },
+    "STROKEVOLUME": {
+        "LOW": [
+            "LVFAILURE",
+            "HYPOVOLEMIA",
+            "HR"
+        ],
+        "NORMAL": [
+            "LVFAILURE",
+            "HYPOVOLEMIA",
+            "HR"
+        ],
+        "HIGH": [
+            "LVFAILURE",
+            "HYPOVOLEMIA",
+            "HR"
+        ]
+    },
+    "ERRLOWOUTPUT": {
+        "TRUE": [
+            "HR"
+        ],
+        "FALSE": [
+            "HR"
+        ]
+    },
+    "HRBP": {
+        "LOW": [
+            "HR",
+            "ERRLOWOUTPUT"
+        ],
+        "NORMAL": [
+            "HR",
+            "ERRLOWOUTPUT"
+        ],
+        "HIGH": [
+            "HR",
+            "ERRLOWOUTPUT"
+        ]
+    },
+    "HREKG": {
+        "LOW": [
+            "ERRCAUTER",
+            "HR"
+        ],
+        "NORMAL": [
+            "ERRCAUTER",
+            "HR"
+        ],
+        "HIGH": [
+            "ERRCAUTER",
+            "HR"
+        ]
+    },
+    "ERRCAUTER": {
+        "TRUE": [
+            "HR"
+        ],
+        "FALSE": [
+            "HR"
+        ]
+    },
+    "HRSAT": {
+        "LOW": [
+            "ERRCAUTER",
+            "HR"
+        ],
+        "NORMAL": [
+            "ERRCAUTER",
+            "HR"
+        ],
+        "HIGH": [
+            "ERRCAUTER",
+            "HR"
+        ]
+    },
+    "INSUFFANESTH": {
+        "TRUE": [
+            "TPR",
+            "ARTCO2",
+            "SAO2"
+        ],
+        "FALSE": [
+            "TPR",
+            "ARTCO2",
+            "SAO2"
+        ]
+    },
+    "ANAPHYLAXIS": {
+        "TRUE": [],
+        "FALSE": []
+    },
+    "TPR": {
+        "LOW": [
+            "ARTCO2",
+            "ANAPHYLAXIS",
+            "CO",
+            "SAO2",
+            "INSUFFANESTH"
+        ],
+        "NORMAL": [
+            "ARTCO2",
+            "ANAPHYLAXIS",
+            "CO",
+            "SAO2",
+            "INSUFFANESTH"
+        ],
+        "HIGH": [
+            "ARTCO2",
+            "ANAPHYLAXIS",
+            "CO",
+            "SAO2",
+            "INSUFFANESTH"
+        ]
+    },
+    "EXPCO2": {
+        "ZERO": [
+            "VENTLUNG",
+            "ARTCO2"
+        ],
+        "LOW": [
+            "VENTLUNG",
+            "ARTCO2"
+        ],
+        "NORMAL": [
+            "VENTLUNG",
+            "ARTCO2"
+        ],
+        "HIGH": [
+            "VENTLUNG",
+            "ARTCO2"
+        ]
+    },
+    "KINKEDTUBE": {
+        "TRUE": [
+            "INTUBATION",
+            "VENTTUBE"
+        ],
+        "FALSE": [
+            "INTUBATION",
+            "VENTTUBE"
+        ]
+    },
+    "MINVOL": {
+        "ZERO": [
+            "INTUBATION",
+            "VENTLUNG"
+        ],
+        "LOW": [
+            "INTUBATION",
+            "VENTLUNG"
+        ],
+        "NORMAL": [
+            "INTUBATION",
+            "VENTLUNG"
+        ],
+        "HIGH": [
+            "INTUBATION",
+            "VENTLUNG"
+        ]
+    },
+    "FIO2": {
+        "LOW": [
+            "VENTALV"
+        ],
+        "NORMAL": [
+            "VENTALV"
+        ]
+    },
+    "PVSAT": {
+        "LOW": [
+            "FIO2",
+            "SHUNT",
+            "VENTALV"
+        ],
+        "NORMAL": [
+            "FIO2",
+            "SHUNT",
+            "VENTALV"
+        ],
+        "HIGH": [
+            "FIO2",
+            "SHUNT",
+            "VENTALV"
+        ]
+    },
+    "SAO2": {
+        "LOW": [
+            "TPR",
+            "ARTCO2",
+            "SHUNT",
+            "INSUFFANESTH",
+            "PVSAT"
+        ],
+        "NORMAL": [
+            "TPR",
+            "ARTCO2",
+            "SHUNT",
+            "INSUFFANESTH",
+            "PVSAT"
+        ],
+        "HIGH": [
+            "TPR",
+            "ARTCO2",
+            "SHUNT",
+            "INSUFFANESTH",
+            "PVSAT"
+        ]
+    },
+    "PAP": {
+        "LOW": [
+            "PULMEMBOLUS"
+        ],
+        "NORMAL": [
+            "PULMEMBOLUS"
+        ],
+        "HIGH": [
+            "PULMEMBOLUS"
+        ]
+    },
+    "PULMEMBOLUS": {
+        "TRUE": [
+            "INTUBATION"
+        ],
+        "FALSE": [
+            "INTUBATION"
+        ]
+    },
+    "SHUNT": {
+        "NORMAL": [
+            "PULMEMBOLUS",
+            "INTUBATION",
+            "PVSAT"
+        ],
+        "HIGH": [
+            "PULMEMBOLUS",
+            "INTUBATION",
+            "PVSAT"
+        ]
+    },
+    "INTUBATION": {
+        "NORMAL": [
+            "KINKEDTUBE",
+            "PULMEMBOLUS",
+            "VENTLUNG",
+            "VENTTUBE"
+        ],
+        "ESOPHAGEAL": [
+            "KINKEDTUBE",
+            "PULMEMBOLUS",
+            "VENTLUNG",
+            "VENTTUBE"
+        ],
+        "ONESIDED": [
+            "KINKEDTUBE",
+            "PULMEMBOLUS",
+            "VENTLUNG",
+            "VENTTUBE"
+        ]
+    },
+    "PRESS": {
+        "ZERO": [
+            "KINKEDTUBE",
+            "VENTTUBE",
+            "INTUBATION"
+        ],
+        "LOW": [
+            "KINKEDTUBE",
+            "VENTTUBE",
+            "INTUBATION"
+        ],
+        "NORMAL": [
+            "KINKEDTUBE",
+            "VENTTUBE",
+            "INTUBATION"
+        ],
+        "HIGH": [
+            "KINKEDTUBE",
+            "VENTTUBE",
+            "INTUBATION"
+        ]
+    },
+    "DISCONNECT": {
+        "TRUE": [
+            "VENTMACH"
+        ],
+        "FALSE": [
+            "VENTMACH"
+        ]
+    },
+    "MINVOLSET": {
+        "LOW": [],
+        "NORMAL": [],
+        "HIGH": []
+    },
+    "VENTMACH": {
+        "ZERO": [
+            "MINVOLSET",
+            "DISCONNECT"
+        ],
+        "LOW": [
+            "MINVOLSET",
+            "DISCONNECT"
+        ],
+        "NORMAL": [
+            "MINVOLSET",
+            "DISCONNECT"
+        ],
+        "HIGH": [
+            "MINVOLSET",
+            "DISCONNECT"
+        ]
+    },
+    "VENTTUBE": {
+        "ZERO": [
+            "KINKEDTUBE",
+            "DISCONNECT",
+            "INTUBATION",
+            "VENTMACH"
+        ],
+        "LOW": [
+            "KINKEDTUBE",
+            "DISCONNECT",
+            "INTUBATION",
+            "VENTMACH"
+        ],
+        "NORMAL": [
+            "KINKEDTUBE",
+            "DISCONNECT",
+            "INTUBATION",
+            "VENTMACH"
+        ],
+        "HIGH": [
+            "KINKEDTUBE",
+            "DISCONNECT",
+            "INTUBATION",
+            "VENTMACH"
+        ]
+    },
+    "VENTLUNG": {
+        "ZERO": [
+            "KINKEDTUBE",
+            "INTUBATION",
+            "ARTCO2",
+            "VENTTUBE"
+        ],
+        "LOW": [
+            "KINKEDTUBE",
+            "INTUBATION",
+            "ARTCO2",
+            "VENTTUBE"
+        ],
+        "NORMAL": [
+            "KINKEDTUBE",
+            "INTUBATION",
+            "ARTCO2",
+            "VENTTUBE"
+        ],
+        "HIGH": [
+            "KINKEDTUBE",
+            "INTUBATION",
+            "ARTCO2",
+            "VENTTUBE"
+        ]
+    },
+    "VENTALV": {
+        "ZERO": [
+            "INTUBATION",
+            "FIO2",
+            "VENTLUNG"
+        ],
+        "LOW": [
+            "INTUBATION",
+            "FIO2",
+            "VENTLUNG"
+        ],
+        "NORMAL": [
+            "INTUBATION",
+            "FIO2",
+            "VENTLUNG"
+        ],
+        "HIGH": [
+            "INTUBATION",
+            "FIO2",
+            "VENTLUNG"
+        ]
+    },
+    "ARTCO2": {
+        "LOW": [
+            "TPR",
+            "INSUFFANESTH",
+            "VENTLUNG",
+            "SAO2",
+            "VENTALV"
+        ],
+        "NORMAL": [
+            "TPR",
+            "INSUFFANESTH",
+            "VENTLUNG",
+            "SAO2",
+            "VENTALV"
+        ],
+        "HIGH": [
+            "TPR",
+            "INSUFFANESTH",
+            "VENTLUNG",
+            "SAO2",
+            "VENTALV"
+        ]
+    },
+    "CATECHOL": {
+        "NORMAL": [
+            "TPR",
+            "ARTCO2",
+            "SAO2",
+            "INSUFFANESTH"
+        ],
+        "HIGH": [
+            "TPR",
+            "ARTCO2",
+            "SAO2",
+            "INSUFFANESTH"
+        ]
+    },
+    "HR": {
+        "LOW": [
+            "STROKEVOLUME",
+            "ERRLOWOUTPUT",
+            "ERRCAUTER",
+            "CATECHOL"
+        ],
+        "NORMAL": [
+            "STROKEVOLUME",
+            "ERRLOWOUTPUT",
+            "ERRCAUTER",
+            "CATECHOL"
+        ],
+        "HIGH": [
+            "STROKEVOLUME",
+            "ERRLOWOUTPUT",
+            "ERRCAUTER",
+            "CATECHOL"
+        ]
+    },
+    "CO": {
+        "LOW": [
+            "TPR",
+            "STROKEVOLUME",
+            "HR"
+        ],
+        "NORMAL": [
+            "TPR",
+            "STROKEVOLUME",
+            "HR"
+        ],
+        "HIGH": [
+            "TPR",
+            "STROKEVOLUME",
+            "HR"
+        ]
+    },
+    "BP": {
+        "LOW": [
+            "CO",
+            "TPR"
+        ],
+        "NORMAL": [
+            "CO",
+            "TPR"
+        ],
+        "HIGH": [
+            "CO",
+            "TPR"
+        ]
+    }
+}

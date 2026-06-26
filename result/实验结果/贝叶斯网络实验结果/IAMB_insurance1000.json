@@ -1,0 +1,132 @@
+{
+  "GoodStudent": [
+    "Age",
+    "SocioEcon",
+    "DrivQuality"
+  ],
+  "Age": [
+    "GoodStudent",
+    "SeniorTrain"
+  ],
+  "SocioEcon": [
+    "Antilock",
+    "HomeBase",
+    "OtherCar"
+  ],
+  "RiskAversion": [
+    "DrivQuality",
+    "SeniorTrain",
+    "AntiTheft"
+  ],
+  "VehicleYear": [
+    "Antilock",
+    "Airbag"
+  ],
+  "ThisCarDam": [
+    "Accident",
+    "ThisCarCost",
+    "Cushioning"
+  ],
+  "RuggedAuto": [
+    "VehicleYear",
+    "MakeModel",
+    "Cushioning",
+    "Airbag"
+  ],
+  "Accident": [
+    "ThisCarDam",
+    "DrivQuality",
+    "ThisCarCost",
+    "OtherCarCost"
+  ],
+  "MakeModel": [
+    "VehicleYear",
+    "RuggedAuto",
+    "CarValue"
+  ],
+  "DrivQuality": [
+    "RiskAversion",
+    "DrivingSkill",
+    "ThisCarCost"
+  ],
+  "Mileage": [
+    "ThisCarDam",
+    "CarValue"
+  ],
+  "Antilock": [
+    "VehicleYear",
+    "Accident",
+    "MakeModel"
+  ],
+  "DrivingSkill": [
+    "RiskAversion",
+    "DrivQuality",
+    "DrivHist"
+  ],
+  "SeniorTrain": [
+    "Age",
+    "RiskAversion",
+    "DrivQuality"
+  ],
+  "ThisCarCost": [
+    "Accident",
+    "CarValue",
+    "PropCost"
+  ],
+  "Theft": [
+    "DrivQuality",
+    "ThisCarCost"
+  ],
+  "CarValue": [
+    "VehicleYear",
+    "MakeModel",
+    "Antilock"
+  ],
+  "HomeBase": [
+    "SocioEcon",
+    "DrivQuality",
+    "AntiTheft"
+  ],
+  "AntiTheft": [
+    "RiskAversion",
+    "MakeModel",
+    "HomeBase"
+  ],
+  "PropCost": [
+    "ThisCarDam",
+    "ThisCarCost",
+    "OtherCarCost"
+  ],
+  "OtherCarCost": [
+    "Accident",
+    "ThisCarCost"
+  ],
+  "OtherCar": [
+    "SocioEcon",
+    "RuggedAuto",
+    "HomeBase"
+  ],
+  "MedCost": [
+    "ThisCarCost",
+    "PropCost",
+    "Cushioning"
+  ],
+  "Cushioning": [
+    "VehicleYear",
+    "RuggedAuto",
+    "CarValue"
+  ],
+  "Airbag": [
+    "VehicleYear",
+    "Antilock"
+  ],
+  "ILiCost": [
+    "RiskAversion",
+    "ThisCarCost"
+  ],
+  "DrivHist": [
+    "RiskAversion",
+    "DrivQuality",
+    "DrivingSkill"
+  ]
+}

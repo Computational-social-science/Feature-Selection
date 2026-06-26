@@ -1,0 +1,180 @@
+{
+  "GoodStudent": [
+    "Age",
+    "SocioEcon",
+    "SeniorTrain"
+  ],
+  "Age": [
+    "GoodStudent",
+    "SocioEcon",
+    "SeniorTrain",
+    "AntiTheft",
+    "DrivHist"
+  ],
+  "SocioEcon": [
+    "RiskAversion",
+    "Antilock",
+    "CarValue",
+    "HomeBase",
+    "AntiTheft"
+  ],
+  "RiskAversion": [
+    "DrivQuality",
+    "Antilock",
+    "DrivingSkill",
+    "SeniorTrain",
+    "AntiTheft",
+    "DrivHist"
+  ],
+  "VehicleYear": [
+    "RuggedAuto",
+    "MakeModel",
+    "Antilock",
+    "CarValue",
+    "Airbag"
+  ],
+  "ThisCarDam": [
+    "Age",
+    "RuggedAuto",
+    "Accident",
+    "ThisCarCost",
+    "PropCost",
+    "DrivHist"
+  ],
+  "RuggedAuto": [
+    "VehicleYear",
+    "MakeModel",
+    "CarValue",
+    "AntiTheft",
+    "Cushioning"
+  ],
+  "Accident": [
+    "ThisCarDam",
+    "RuggedAuto",
+    "Mileage",
+    "DrivingSkill",
+    "OtherCarCost"
+  ],
+  "MakeModel": [
+    "SocioEcon",
+    "VehicleYear",
+    "Mileage",
+    "Antilock",
+    "CarValue",
+    "Cushioning"
+  ],
+  "DrivQuality": [
+    "RiskAversion",
+    "Accident",
+    "DrivingSkill"
+  ],
+  "Mileage": [
+    "SocioEcon",
+    "Accident",
+    "MakeModel",
+    "DrivingSkill",
+    "CarValue",
+    "Airbag"
+  ],
+  "Antilock": [
+    "VehicleYear",
+    "MakeModel",
+    "OtherCarCost",
+    "OtherCar",
+    "Airbag"
+  ],
+  "DrivingSkill": [
+    "Age",
+    "RiskAversion",
+    "DrivQuality",
+    "PropCost",
+    "DrivHist"
+  ],
+  "SeniorTrain": [
+    "Age",
+    "SocioEcon",
+    "DrivingSkill",
+    "AntiTheft",
+    "DrivHist"
+  ],
+  "ThisCarCost": [
+    "ThisCarDam",
+    "Antilock",
+    "Theft",
+    "CarValue",
+    "PropCost"
+  ],
+  "Theft": [
+    "Accident",
+    "ThisCarCost",
+    "PropCost"
+  ],
+  "CarValue": [
+    "SocioEcon",
+    "VehicleYear",
+    "MakeModel",
+    "Mileage",
+    "ThisCarCost"
+  ],
+  "HomeBase": [
+    "SocioEcon",
+    "RiskAversion",
+    "AntiTheft"
+  ],
+  "AntiTheft": [
+    "SocioEcon",
+    "RiskAversion"
+  ],
+  "PropCost": [
+    "ThisCarCost",
+    "OtherCarCost"
+  ],
+  "OtherCarCost": [
+    "SocioEcon",
+    "RuggedAuto",
+    "Accident",
+    "ThisCarCost",
+    "PropCost"
+  ],
+  "OtherCar": [
+    "Age",
+    "SocioEcon",
+    "Mileage",
+    "CarValue",
+    "HomeBase",
+    "DrivHist"
+  ],
+  "MedCost": [
+    "Age",
+    "RiskAversion",
+    "Accident",
+    "Mileage",
+    "PropCost",
+    "Cushioning"
+  ],
+  "Cushioning": [
+    "RuggedAuto",
+    "MakeModel",
+    "Antilock",
+    "MedCost",
+    "Airbag"
+  ],
+  "Airbag": [
+    "VehicleYear",
+    "RuggedAuto",
+    "MakeModel",
+    "ThisCarCost",
+    "Cushioning"
+  ],
+  "ILiCost": [
+    "Accident"
+  ],
+  "DrivHist": [
+    "RiskAversion",
+    "RuggedAuto",
+    "Accident",
+    "Mileage",
+    "DrivingSkill",
+    "PropCost"
+  ]
+}

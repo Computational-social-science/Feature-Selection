@@ -1,0 +1,181 @@
+{
+  "HISTORY": [
+    "LVFAILURE",
+    "HR"
+  ],
+  "CVP": [
+    "LVEDVOLUME"
+  ],
+  "PCWP": [
+    "STROKEVOLUME",
+    "LVEDVOLUME",
+    "ERRCAUTER"
+  ],
+  "HYPOVOLEMIA": [
+    "LVEDVOLUME",
+    "CO"
+  ],
+  "LVEDVOLUME": [
+    "HYPOVOLEMIA",
+    "LVFAILURE",
+    "PCWP",
+    "CVP"
+  ],
+  "LVFAILURE": [
+    "STROKEVOLUME",
+    "LVEDVOLUME",
+    "HISTORY"
+  ],
+  "STROKEVOLUME": [
+    "HYPOVOLEMIA",
+    "LVFAILURE",
+    "CO",
+    "HR"
+  ],
+  "ERRLOWOUTPUT": [
+    "HRBP",
+    "STROKEVOLUME",
+    "CO",
+    "HRSAT"
+  ],
+  "HRBP": [
+    "HR",
+    "ERRLOWOUTPUT"
+  ],
+  "HREKG": [
+    "HR",
+    "ERRCAUTER"
+  ],
+  "ERRCAUTER": [
+    "HRSAT",
+    "HRBP",
+    "HREKG"
+  ],
+  "HRSAT": [
+    "HR",
+    "ERRCAUTER"
+  ],
+  "INSUFFANESTH": [
+    "CO",
+    "VENTALV",
+    "TPR"
+  ],
+  "ANAPHYLAXIS": [
+    "TPR"
+  ],
+  "TPR": [
+    "BP",
+    "CATECHOL",
+    "LVEDVOLUME",
+    "CO"
+  ],
+  "EXPCO2": [
+    "VENTLUNG",
+    "ARTCO2"
+  ],
+  "KINKEDTUBE": [
+    "VENTLUNG",
+    "PRESS",
+    "INTUBATION",
+    "VENTTUBE"
+  ],
+  "MINVOL": [
+    "VENTTUBE",
+    "VENTALV",
+    "VENTLUNG"
+  ],
+  "FIO2": [
+    "PVSAT"
+  ],
+  "PVSAT": [
+    "VENTALV",
+    "FIO2",
+    "SAO2"
+  ],
+  "SAO2": [
+    "SHUNT",
+    "PVSAT"
+  ],
+  "PAP": [
+    "VENTLUNG",
+    "PULMEMBOLUS"
+  ],
+  "PULMEMBOLUS": [
+    "SHUNT",
+    "PAP"
+  ],
+  "SHUNT": [
+    "EXPCO2",
+    "VENTALV",
+    "PULMEMBOLUS",
+    "MINVOL",
+    "SAO2"
+  ],
+  "INTUBATION": [
+    "VENTALV",
+    "MINVOL",
+    "EXPCO2"
+  ],
+  "PRESS": [
+    "INTUBATION",
+    "KINKEDTUBE",
+    "VENTTUBE"
+  ],
+  "DISCONNECT": [
+    "VENTTUBE",
+    "VENTMACH"
+  ],
+  "MINVOLSET": [
+    "VENTMACH"
+  ],
+  "VENTMACH": [
+    "DISCONNECT",
+    "MINVOLSET",
+    "VENTTUBE"
+  ],
+  "VENTTUBE": [
+    "PRESS",
+    "VENTMACH",
+    "DISCONNECT",
+    "MINVOL"
+  ],
+  "VENTLUNG": [
+    "MINVOL",
+    "EXPCO2",
+    "PVSAT",
+    "PRESS"
+  ],
+  "VENTALV": [
+    "SAO2",
+    "ARTCO2",
+    "MINVOL",
+    "VENTLUNG"
+  ],
+  "ARTCO2": [
+    "VENTLUNG",
+    "VENTALV",
+    "EXPCO2"
+  ],
+  "CATECHOL": [
+    "VENTALV",
+    "TPR",
+    "HR"
+  ],
+  "HR": [
+    "ARTCO2",
+    "HREKG",
+    "HRSAT",
+    "ERRCAUTER"
+  ],
+  "CO": [
+    "HRSAT",
+    "HRBP",
+    "STROKEVOLUME",
+    "BP"
+  ],
+  "BP": [
+    "CO",
+    "CATECHOL",
+    "TPR"
+  ]
+}
