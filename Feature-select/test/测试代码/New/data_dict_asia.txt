@@ -1,0 +1,57 @@
+{
+    "asia": [],
+    "tub": [
+        "lung",
+        "dysp",
+        "smoke",
+        "either",
+        "xray"
+    ],
+    "smoke": [
+        "bronc",
+        "tub",
+        "lung",
+        "dysp",
+        "either",
+        "xray"
+    ],
+    "lung": [
+        "bronc",
+        "tub",
+        "dysp",
+        "smoke",
+        "either",
+        "xray"
+    ],
+    "bronc": [
+        "lung",
+        "dysp",
+        "smoke",
+        "either",
+        "xray"
+    ],
+    "either": [
+        "bronc",
+        "tub",
+        "lung",
+        "dysp",
+        "smoke",
+        "xray"
+    ],
+    "xray": [
+        "bronc",
+        "tub",
+        "lung",
+        "dysp",
+        "smoke",
+        "either"
+    ],
+    "dysp": [
+        "bronc",
+        "tub",
+        "lung",
+        "smoke",
+        "either",
+        "xray"
+    ]
+}
